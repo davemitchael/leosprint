@@ -1,8 +1,33 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+ @import url("../CSS/desktop_hd.css") all ; 
+@import url("../CSS/desktop.css")  all;
+@import url("../CSS/desktop_min.css") all;
+@import url("../CSS/tablet.css")  all;
+@import url("../CSS/mobile.css")  all;
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #1E1E1E; 
 }
 
-a {
-  color: #00B7FF;
+
+
+@font-face {
+    font-family: Anglecia;
+    src: url('../Font/AngleciaProDisplay-Regular.otf');
 }
+
+@font-face {
+    font-family: PT Root;
+    src: url('../Font/PT\ Root\ UI_Light.woff');
+}
+
+@font-face {
+    font-family: dripicons;
+    src: url(../Font/dripicons-v2.woff);
+    font-weight: lighter;
+  }
+
+
