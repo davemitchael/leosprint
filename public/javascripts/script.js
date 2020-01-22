@@ -22,7 +22,7 @@ $('.slider').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 3,
-        // settings: "unslick",
+
       
       }
     }, 
@@ -31,7 +31,7 @@ $('.slider').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 3,
-        // settings: "unslick",
+
         centerPadding: '300px',
       }
     }, 
@@ -41,7 +41,6 @@ $('.slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         centerPadding: '240px',
-        settings: "unslick",
       }
     },
     {
@@ -50,8 +49,6 @@ $('.slider').slick({
         slidesToShow: 1,
         slidesToScroll: 3,
         centerPadding: '0px',
-        settings: "unslick",
-
       }
     }
   ]
@@ -61,7 +58,6 @@ $('.slider').slick({
 $(window).resize(function () {
   $('.slider').not('.slick-initialized').slick('resize');
 });
-
 $(window).on('orientationchange', function () {
   $('.slider').not('.slick-initialized').slick('resize');
 });
