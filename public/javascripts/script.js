@@ -21,14 +21,7 @@ $('.slider').slick({
       breakpoint: 1360, //1360->1920px
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 3,
-<<<<<<< HEAD
-
-      
-=======
-        // settings: "unslick",
-
->>>>>>> c3c80a3e391f8ad13c60ac937ad44ec075347fac
+        slidesToScroll: 3
       }
     },
     {
@@ -36,7 +29,6 @@ $('.slider').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 3,
-
         centerPadding: '300px',
       }
     },
@@ -53,7 +45,7 @@ $('.slider').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 3,
-        centerPadding: '0px',
+        centerPadding: '0px'
       }
     }
   ]
