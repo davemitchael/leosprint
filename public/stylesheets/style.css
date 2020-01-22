@@ -1,15 +1,16 @@
 
- @import url("../CSS/desktop_hd.css") all ; 
+@import url("../CSS/desktop_hd.css") all ;
 @import url("../CSS/desktop.css")  all;
 @import url("../CSS/desktop_min.css") all;
 @import url("../CSS/tablet.css")  all;
 @import url("../CSS/mobile.css")  all;
+@import url("../CSS/form.css")  all;
 * {
     margin: 0;
     padding: 0;
 }
 body{
-    background: #1E1E1E; 
+    background: #1E1E1E;
 }
 
 

@@ -1,0 +1,41 @@
+{
+  "cars" : [
+    {
+      "id": 0,
+      "name": "Mercedes Sprinter 515CDI-19 місць",
+      "type": 0,
+      "imgUrl": "/Img/1.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Mercedes Sprinter 519 CDI - 20 місць ",
+      "type": 0,
+      "imgUrl": "/Img/2.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mercedes Sprinter 319 CDI - 22 місця",
+      "type": 0,
+      "imgUrl": "/Img/3.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Mercedes Sprinter 316 CDI - 20 місць",
+      "type": 0,
+      "imgUrl": "/Img/4.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Mercedes Sprinter 311 CDI - 17 місць",
+      "type": 0,
+      "imgUrl": "/Img/5.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Mercedes Sprinter 413 CDI - 18 місць",
+      "type": 0,
+      "imgUrl": "/Img/6.jpg"
+    }
+  ]
+
+}

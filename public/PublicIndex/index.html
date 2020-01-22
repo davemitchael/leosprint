@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css" href="../CSS/menu.css">
     <link rel="stylesheet" href="../stylesheets/style.css">
     <link rel="stylesheet" href="../CSS/animate.css"/>
-
 </head>
 
 <body>
@@ -313,107 +312,97 @@
                         <div class="modelImg" id="model-1">
                             <!-- id идентефикатор нужного изображения выбраного в селекте  -->
                             <div class="gallery">
-                                <div class="gallery_main">
+                                <div id="gallery_main" class="gallery_main">
 
                                 </div>
-                                <ul class="gallery-list">
-                                    <li class="gallery-item active">
-
-                                    </li>
-                                    <li class="gallery-item">
-
-                                    </li>
-                                    <li class="gallery-item">
-
-                                    </li>
-                                    <!-- <li class="gallery-item">
-
-                                    </li>
-                                    <li class="gallery-item">
-
-                                    </li>
-                                    <li class="gallery-item">
-
-                                    </li> -->
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="modelImg" id="model-2">
-                            <div class="gallery">
-                                <div class="gallery_main_two">
-
-                                </div>
-                                <ul class="gallery-list">
-                                    <li class=" two  active">
-
-                                    </li>
-                                    <li class="two ">
-
-                                    </li>
-                                    <li class="two ">
-
-                                    </li>
-                                    <li class="two ">
-
-                                    </li>
-                                    <li class="two ">
-
-                                    </li>
-                                    <li class="two ">
-
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>
 
                     <div class="inp">
-                        <div class="inline_block">
-                        <select class="model">
-                            <!-- <option>-</option> -->
-                            <option data="#model-1">Модель 1</option>
-                            <!-- в data указываем id блока с изображением нужного автомобиля  -->
-                            <option data="#model-2">Модель 2</option>
-                            <!-- в data указываем id блока с изображением нужного автомобиля  -->
-                        </select>
-                        <div>
-                            <label for="name">Ваше ім'я*</label>
-                        <input type="text" id="name">
+                        <!--<form class="inp" id="contact-us-form">
+                            <div class="inline_block">
+                                <select name="model" class="model">
+                                    &lt;!&ndash; <option>-</option> &ndash;&gt;
+                                    <option value="#model-1">Модель 1</option>
+                                    &lt;!&ndash; в data указываем id блока с изображением нужного автомобиля  &ndash;&gt;
+                                    <option value="#model-1">Модель 2</option>
+                                    &lt;!&ndash; в data указываем id блока с изображением нужного автомобиля  &ndash;&gt;
+                                </select>
+                                <div>
+                                    <label for="name">Ваше ім'я*</label>
+                                    <input id="name" name="name" minlength="2" type="text" required/>
+                                </div>
+                            </div>
+                            <div class="inline_block">
+                                <div>
+                                    <label for="email"><span>Ваше email*</span></label>
+                                    <input type="email" name="email" id="email" required>
+                                </div>
+                                <div>
+                                    <label for="goOut"><span>Виїжджаєте з</span></label>
+                                    <input type="text" name="goOut" id="goOut">
+                                </div>
+                            </div>
+                            <div class="inline_block">
+                                <div>
+                                    <label for="goTo"><span>Прямуєте до</span></label>
+                                    <input type="text" name="goTo" id="goTo">
+                                </div>
+                                <div>
+                                    <label for="phone"><span>Номер телефону*</span></label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                            <textarea name="details" placeholder="Деталі поїздки" class="area" ></textarea>
+                            <input type="submit" value="Відправити" />
+                        </form>-->
+                           <form class="contact-us-form inp" id="contact-us-form">
+                               <label class="form-group">
+                                   <select id="cars-list" class="cars-list" name="carName">
 
-                         </div>
-                        </div>
-
-                        <div class="inline_block">
-                            <div>
-                        <label for="email"><span>Ваше email*</span></label>
-                        <input type="email" id="email">
-                        </div>
-                            <div>
-                        <label for="goOut"><span>Виїжджаєте з*</span></label>
-                        <input type="text" id="goOut">
+                                   </select>
+                               </label>
+                               <label class="form-group">
+                                   <input type="text" name="name" class="form-control">
+                                   <span class="input-name">Ваше ім'я <span class="required-star">*</span></span>
+                                   <span class="border"></span>
+                               </label>
+                               <label class="form-group">
+                                   <input type="text" name="email" class="form-control">
+                                   <span class="input-name">Ваше email <span class="required-star">*</span></span>
+                                   <span class="border"></span>
+                               </label>
+                               <label class="form-group">
+                                   <input type="text" name="goOut" class="form-control">
+                                   <span class="input-name">Виїжджаєте з</span>
+                                   <span class="border"></span>
+                               </label>
+                               <label class="form-group">
+                                   <input type="text" name="goTo" class="form-control">
+                                   <span class="input-name">Прямуєте до</span>
+                                   <span class="border"></span>
+                               </label>
+                               <label class="form-group">
+                                   <input type="text" id="phone" name="phone" class="form-control">
+                                   <span class="input-name">Номер телефону <span class="required-star">*</span></span>
+                                   <span class="border"></span>
+                               </label>
+                               <label class="form-group" >
+                                   <textarea name="details" id="details" class="form-control"></textarea>
+                                   <span class="input-name">Деталі поїздки</span>
+                                   <span class="border textarea-border"></span>
+                               </label>
+                               <label class="form-group submit-container" >
+                                   <input type="submit" value="Відправити" class="submit-button" />
+                               </label>
+                           </form>
                     </div>
-                        </div>
-
-                        <div class="inline_block">
-                        <div>
-
-                        <label for="goTo"><span>Прямуєте до*</span></label>
-                        <input type="text" id="goTo">
-                    </div>
-                    <div>
-                        <label for="phone"><span>Прямуєте до*</span></label>
-                        <input type="tel" id="phone">
-                    </div>
-                        </div>
-                        <textarea name="" placeholder="Деталі поїздки" class="area" ></textarea>
-                        <button>Відправити</button>
-                    </div>
-
-                </form>
+           <!--     </form> -->
 
             </div>
         </div>
-    </div>
+   <!-- </div> -->
     <div class="block_6">
         <div class="footer">
             <div class="logos">
@@ -439,10 +428,21 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<!--    <script src="https://cdn.jsdelivr.net/gh/RobinHerbots/Inputmask@3.3.7/dist/inputmask/inputmask.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/RobinHerbots/Inputmask@3.3.7/dist/inputmask/inputmask.extensions.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/RobinHerbots/Inputmask@3.3.7/dist/inputmask/inputmask.numeric.extensions.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/RobinHerbots/Inputmask@3.3.7/dist/inputmask/inputmask.date.extensions.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/RobinHerbots/Inputmask@3.3.7/dist/inputmask/inputmask.phone.extensions.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/RobinHerbots/Inputmask@3.3.7/dist/inputmask/jquery.inputmask.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/RobinHerbots/Inputmask@3.3.7/dist/inputmask/phone-codes/phone.js"></script>-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
     <script src="../lib/slick/slick.min.js"></script>
+    <script src="../lib/jquery.mask.min.js"></script>
 
     <script src="../javascripts/menu.js"></script>
     <script src="../javascripts/script.js"></script>
+    <script src="../javascripts/form.js"></script>
 </body>
 
 </html>
