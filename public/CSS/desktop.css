@@ -1,21 +1,21 @@
 
 @media only all and (min-width: 1360px) and (max-width:1919px){
-  :root{ 
+  :root{
   /* font-size */
     --fontSize_h2: 72px;
     --fontSize_h4: 24px;
     --fontSize_p: 16px;
     --fontSize_P_form: 16px;
     --fontSize_arrow:18px;
- 
+
      /* font-atributs */
-    --fontWeight_discript: 500;  
+    --fontWeight_discript: 500;
     --letterSpacing_discript: .8px;
     --fontFamily_discript: Anglecia;
     --fontFamily_paragraph: PT Root;
     --fontFamily_arrow: dripicons;
     --lineHeight_all: 1.4;
- 
+
     /* colors */
     --color_BG:#1E1E1E;
     --color_h2:#be9b64;
@@ -23,11 +23,11 @@
     --color_h4:#E4E4E7;
     --color_P:#E4E4E7;
     --color_form_P:#9b9b9b;
- 
+
     /* paddding */
     --paddingTop:80px;
-}     
-  
+}
+
 h2 {
   font-family: var(--fontFamily_discript);
   font-size: var(--fontSize_h2);
@@ -67,9 +67,9 @@ p {
       width: 98%;
       padding: 30px 0 0;
       align-items: center;
-       background: none;
+      background: none;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       position: relative;
       height: 30px;
 
@@ -127,7 +127,7 @@ p {
     }
 
     .discript_2_1 {
-       
+
     justify-content: space-evenly;
     width: 50%;
     display: flex;
@@ -231,12 +231,12 @@ p {
         /* margin-left: 176px;*/
     }
 
-  
+
 
     .servis p {
         width: 70%;
         color: var(--color_form_P);
-    
+
     }
 
     .block_4 {
@@ -250,16 +250,16 @@ p {
         text-align: right;
         width: 25%;
         display: flex;
-        padding-top: calc(var(--paddingTop)*2); 
+        padding-top: calc(var(--paddingTop)*2);
         margin-right: 50%;
         margin-left: 25%;
     }
     .discript_4_1 {
-        
+
       padding-top: var(--paddingTop);
         width: 25%;
         margin-right:75%;
-        
+
     }
 
     /*START slider*/
@@ -281,7 +281,7 @@ p {
     height: 600px;
     overflow: hidden;
     transition: transform .4s;
-    position: relative; 
+    position: relative;
   }
 
   .slider img {
@@ -299,7 +299,7 @@ p {
   }
 
   .slick-prev {
- 
+
   left: 200px;
   text-align: left;
   /* custom position left arrow*/
@@ -310,7 +310,7 @@ p {
     text-align: left;
     /* custom left arrow*/
   }
-  
+
   .slick-next {
     right: 200px;
     text-align: right;
@@ -323,8 +323,8 @@ p {
     text-align: right;
     /* custom right arrow*/
   }
-  
-  
+
+
    /* custom left slider*/
   .item.slick-slide {
     transform: scale(0.7)  translate(-250px);
@@ -346,16 +346,16 @@ p {
     will-change: width,height;
     z-index: 10;
   }
-  
-  
+
+
   .item.slick-slide.slick-center {
-   transition-duration: .8s; 
-     transform: scale(1); 
+   transition-duration: .8s;
+     transform: scale(1);
     transition-timing-function: cubic-bezier(.6,0,.41,1);
-   
+
   }
 
-  
+
   .slick-center:after {
     opacity: 0;
   }
@@ -374,11 +374,11 @@ p {
     color: black;
     line-height: 1;
   }
- 
+
 
   /* style arrow left */
-  .slick-prev:before { 
-     content: "\55"; 
+  .slick-prev:before {
+     content: "\55";
     display: flex;
     justify-content: center;
     opacity: 1;
@@ -386,7 +386,7 @@ p {
 
 
 /* style arrow right */
-  .slick-next:before { 
+  .slick-next:before {
     content: "\56";
     display: flex;
     justify-content: center;
@@ -452,7 +452,7 @@ p {
   background-size: cover;
   background-position: center;
 }
-.gallery-list{ 
+.gallery-list{
   display: flex;
   padding: 0px;
   /* додаю ширину */
@@ -525,7 +525,8 @@ p {
 
     .gal{
         width: 65%;
-            padding-right: 32px;
+        padding-right: 32px;
+        padding-top: 1.5%;
     }
 
     .inp{
@@ -566,7 +567,7 @@ p {
         /* position: relative; */
        top: 20px;
         border-bottom:1px solid #4a4a4a ;
-        
+
       }
       .inp label:focus{
           margin-top: 10px;
@@ -596,7 +597,7 @@ button{
   display: flex;
     width: 100%;background: #fff;
     margin-top:var(--paddingTop);
-  
+
 }
 .footer{
   width: 1248px;
@@ -613,12 +614,12 @@ button{
 
   color: var(--color_BG);
 
-} 
+}
 .block_6 a{
 font-size: var(--fontSize_p);
 font-family: var(--fontFamily_paragraph);
-color: var(--color_BG); 
-text-decoration: none; 
+color: var(--color_BG);
+text-decoration: none;
 }
 .logos,.contact,.PP,.zholud{
   display: flex;
