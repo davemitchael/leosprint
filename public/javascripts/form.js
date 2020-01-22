@@ -14,8 +14,6 @@ $(document).ready(function () {
         })
 });
 
-
-
 $("#contact-us-form").validate({
     rules: {
         name: {
@@ -100,11 +98,11 @@ function setCar(imageUrl) {
 }
 
 $("form#contact-us-form :input, form#contact-us-form textarea").each(function () {
-    $(this).on('input', translateInput);
-    $(this).on('click', translateInput);
+    $(this).on('input', transformInput);
+    $(this).on('click', transformInput);
 });
 
-function translateInput() {
+function transformInput() {
     let parent = $(this).parent();
     let span = parent.find('span.input-name');
     if(this.value && this.value !== '') {

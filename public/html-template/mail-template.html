@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leosprint</title>
+</head>
+<style>
+    .right-header {
+        float: left;
+        width: 49%;
+        border-right: 1px solid white;
+        color: white;
+        height: inherit;
+        font-size: larger;
+        font-family: sans-serif;
+    }
+
+    .left-header {
+        float: right;
+        width: 49%;
+        color: white;
+        height: inherit;
+        font-size: larger;
+        font-family: sans-serif;
+    }
+
+    .details-header {
+        float: left;
+        width: 100%;
+        color: white;
+        height: inherit;
+        font-size: larger;
+        font-family: sans-serif;
+    }
+    .header-row {
+        height: 40px;
+        background-color: cornflowerblue;
+    }
+
+    .email-container {
+        border: 1px solid black;
+        width: 800px;
+        height: 400px;
+    }
+
+    .data-row {
+        height: 50px;
+        background-color: white;
+    }
+    .right-data {
+        float: left;
+        width: 49%;
+        border-right: 1px solid black;
+        color: black;
+        height: inherit;
+        font-size: larger;
+        font-family: sans-serif;
+    }
+
+    .left-data {
+        float: right;
+        width: 49%;
+        color: black;
+        height: inherit;
+        font-size: larger;
+        font-family: sans-serif;
+    }
+
+    .padding-8 {
+        padding: 8px;
+    }
+
+    .padding-for-data {
+        padding: 15px 8px;
+    }
+</style>
+<body>
+    <div class="email-container">
+        <div class="header-row">
+            <div class="right-header">
+                <div class="padding-8">Транспорт</div>
+            </div>
+            <div class="left-header">
+                <div class="padding-8">Ім'я клієнта</div>
+            </div>
+        </div>
+        <div class="data-row">
+            <div class="right-data">
+                <div class="padding-for-data">{carName}</div>
+            </div>
+            <div class="left-data">
+                <div class="padding-for-data">{clientName}</div>
+            </div>
+        </div>
+        <div class="header-row">
+            <div class="right-header">
+                <div class="padding-8">Місце відправлення</div>
+            </div>
+            <div class="left-header">
+                <div class="padding-8">Email клієнта</div>
+            </div>
+        </div>
+        <div class="data-row">
+            <div class="right-data">
+                <div class="padding-for-data">{goOut}</div>
+            </div>
+            <div class="left-data">
+                <div class="padding-for-data">{email}</div>
+            </div>
+        </div>
+        <div class="header-row">
+            <div class="right-header">
+                <div class="padding-8">Місце прибуття</div>
+            </div>
+            <div class="left-header">
+                <div class="padding-8">Телефон клієнта</div>
+            </div>
+        </div>
+        <div class="data-row">
+            <div class="right-data">
+                <div class="padding-for-data">{goTo}</div>
+            </div>
+            <div class="left-data">
+                <div class="padding-for-data">{phone}</div>
+            </div>
+        </div>
+        <div class="header-row">
+            <div class="details-header">
+                <div class="padding-8">Деталі поїздки</div>
+            </div>
+        </div>
+        <div class="data-row">
+            <div class="padding-for-data">{details}</div>
+        </div>
+    </div>
+</body>
+</html>
