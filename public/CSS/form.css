@@ -1,4 +1,138 @@
 label.error {
     color: red;
-    padding-top: 1%;
+    padding-top: 2% !important;
+    padding-left: 5%;
 }
+
+.contact-us-form.inp label {
+    top: auto;
+    left: 0;
+    padding-top: 0;
+}
+
+.required-star {
+    color: var(--color_h2) !important;
+    display: contents;
+}
+.contact-us-form.inp .submit-container {
+    display: flex !important;
+    justify-content: center;
+}
+
+.contact-us-form.inp .submit-container .submit-button {
+    background-color: #be9b64;
+    color: #fff;
+    width: 70%;
+    height: 60px;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+.contact-us-form.inp .submit-container .submit-button:hover {
+    background-color: #d8b57f;
+    cursor: pointer;
+}
+
+.textarea-border {
+    position: initial !important;
+}
+
+.contact-us-form.inp @font-face {
+font-family: "Montserrat-Regular";
+src: url("../Font/Montserrat/Montserrat-Regular.ttf"); }
+.contact-us-form.inp @font-face {
+font-family: "Montserrat-Bold";
+src: url("../Font/Montserrat/Montserrat-Bold.ttf"); }
+.contact-us-form.inp @font-face {
+font-family: "Montserrat-SemiBold";
+src: url("../Font/Montserrat/Montserrat-SemiBold.ttf"); }
+
+.contact-us-form.inp input, textarea, button {
+    color: #fff;
+    font-size: 15px;
+}
+
+:focus {
+outline: none; }
+
+.contact-us-form.inp textarea {
+    resize: none;
+}
+
+.contact-us-form.inp .form-group {
+    position: relative;
+    display: block;
+    margin-bottom: 30px; }
+.contact-us-form.inp .form-group span {
+    font-size: 18px;
+    color: var(--color_form_P);
+    position: absolute;
+    top: 11px;
+    transition: all .2s ease;
+    transform-origin: 0 0;
+    cursor: text;
+    font-family: inherit;
+    padding-left: 5%;
+}
+.contact-us-form.inp .form-group span.border {
+    height: 2px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 41px;
+    transform: scaleX(0);
+    transition: all .15s ease;
+    background: #fff;
+}
+
+.contact-us-form.inp .form-control {
+    border: none;
+    border-bottom: 2px solid var(--color_form_P);
+    display: block;
+    width: 100%;
+    height: 43px;
+    font-size: 15px;
+    background: none;
+    font-family: inherit;
+    padding-left: 5%;
+}
+
+/*.form-control:focus, .form-control:valid {
+    border-bottom: 2px solid #fff;
+}
+.form-control:focus + span, .form-control:valid + span {
+    transform: translateY(-22px) scale(0.8);
+}
+.form-control:focus + span + .border, .form-control:valid + span + .border {
+      transform: scaleX(1);
+}*/
+
+.contact-us-form.inp .form-control:focus {
+    border-bottom: 2px solid #fff;
+}
+.contact-us-form.inp .form-control:focus + span {
+    transform: translateY(-22px) scale(0.8);
+}
+.contact-us-form.inp .form-control:focus + span + .border {
+    transform: scaleX(1);
+}
+
+.contact-us-form.inp textarea.form-control {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100px;
+}
+
+.contact-us-form.inp .cars-list {
+    background: none;
+    width: 105%;
+    padding-left: 5%;
+    height: 50px;
+    border-bottom: 2px solid var(--color_form_P);
+    font-family: inherit;
+}
+.cars-list option {
+    color: black;
+}
+/*# sourceMappingURL=style.css.map */
