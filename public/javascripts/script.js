@@ -1,5 +1,5 @@
 
-//Start Slick Slider 
+//Start Slick Slider
 $('.slider').slick({
   slidesToShow: 1,
   slidesToScroll: 3,
@@ -23,9 +23,9 @@ $('.slider').slick({
         slidesToShow: 1,
         slidesToScroll: 3,
         // settings: "unslick",
-      
+
       }
-    }, 
+    },
     {
       breakpoint: 1024,//1024-1360px
       settings: {
@@ -34,7 +34,7 @@ $('.slider').slick({
         // settings: "unslick",
         centerPadding: '300px',
       }
-    }, 
+    },
     {
       breakpoint: 768,//768->1024px
       settings: {
@@ -78,7 +78,7 @@ imgs.each(function () {
   $(this).hide();
 });
 
-//End Slick Slider 
+//End Slick Slider
 
 // Початок галареї
 let $galleryMain = $('.gallery_main');
@@ -122,4 +122,8 @@ $(function () {
     $(".modelImg").fadeOut(1); // прячем все блоки с изображением автомобилей
     $(img_id).fadeIn(10); // показываем нужный блок с изображением автомобиля
   });
+});
+
+$(document).ready(function () {
+  $('#year-and-logo').append(`<p >© ${new Date().getFullYear()} Leosprint</p>`)
 });
