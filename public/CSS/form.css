@@ -159,4 +159,8 @@ outline: none; }
 .lSSlideOuter .lSPager.lSGallery li.active img {
     opacity: 1 !important;
 }
+
+.lSAction {
+    display: none !important;
+}
 /*# sourceMappingURL=style.css.map */

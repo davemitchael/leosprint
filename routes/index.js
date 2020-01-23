@@ -54,6 +54,7 @@ router.post('/sendEmail', function (req, res, next) {
     }).then(html => {
         let mailOptions = {
             from: 'leosprint.server@gmail.com',
+            //ketskoryslan@ukr.net for production
             to: 'vitaliiivantsiv@gmail.com',
             subject: 'Нове замовлення',
             text: 'У вас нове замовлення',
