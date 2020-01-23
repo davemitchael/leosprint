@@ -101,7 +101,7 @@ function changePhototwo() {
   let newImage = $this.css('backgroundImage');
 
   $galleryMainTwo.css('backgroundImage', newImage);
-  console.log(newImage)
+  console.log(newImage);
 
   /* Change active image */
   $two.removeClass('active');

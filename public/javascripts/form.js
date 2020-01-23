@@ -1,4 +1,6 @@
 let cars = [];
+let imageGallery = '';
+
 $(document).ready(function () {
     $('#phone').mask('+380-0000-000-00');
 
@@ -8,10 +10,18 @@ $(document).ready(function () {
             cars = data.cars;
 
             initDropDown(cars);
+            setImagesIntoGallery(cars[0].images, cars[0].name);
         })
+        .then(e =>  initImageGallery())
         .catch(err => {
             console.log(err);
-        })
+        });
+
+    $('#cars-list').change(function () {
+        let car = cars.find(car => car.id === +this.value);
+
+        setImagesIntoGallery(car.images, car.name);
+    });
 });
 
 $("#contact-us-form").validate({
@@ -71,8 +81,9 @@ $("#contact-us-form").validate({
     }
 });
 
-$('#cars-list').change(function () {
-    setCar(cars.find(car => car.id === +this.value).imgUrl);
+$("form#contact-us-form :input, form#contact-us-form textarea").each(function () {
+    $(this).on('input', transformInput);
+    //$(this).on('click', transformInput);
 });
 
 function initDropDown(dataOfCars) {
@@ -89,18 +100,26 @@ function initDropDown(dataOfCars) {
             "</optgroup>"
         ]
     );
-
-    setCar(dataOfCars[0].imgUrl);
 }
 
-function setCar(imageUrl) {
-    $('#gallery_main').css('background-image', 'url(' + imageUrl + ')');
-}
+function initImageGallery() {
+    let gallery = $('#image-gallery');
 
-$("form#contact-us-form :input, form#contact-us-form textarea").each(function () {
-    $(this).on('input', transformInput);
-    $(this).on('click', transformInput);
-});
+   imageGallery = gallery.lightSlider({
+        gallery: true,
+        autoWidth: false,
+        item: 1,
+        thumbItem: 3,
+        slideMargin: 0,
+        speed:500,
+        auto: false,
+        loop: true,
+        onSliderLoad: function() {
+           // $(`#${id}`).remove();
+            gallery.removeClass('cS-hidden');
+        }
+    });
+}
 
 function transformInput() {
     let parent = $(this).parent();
@@ -109,5 +128,24 @@ function transformInput() {
         span.css( 'transform', 'translateY(-22px) scale(0.8)');
     } else {
         span.css( 'transform', 'scaleX(1)');
+    }
+}
+
+function setImagesIntoGallery(images, carName) {
+    let gallery = $('#image-gallery');
+
+    let imageGalleryItems = images.map(imageUrl => {
+        return `<li data-thumb="${imageUrl}"> 
+                    <img src="${imageUrl}" alt="${carName}"/>
+                 </li>`;
+    });
+
+    if( gallery.children().length > 0) {
+        imageGallery && imageGallery.destroy();
+        gallery.empty();
+        gallery.append(imageGalleryItems);
+        initImageGallery();
+    } else {
+        gallery.append(imageGalleryItems);
     }
 }

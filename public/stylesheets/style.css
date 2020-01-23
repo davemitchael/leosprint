@@ -4,7 +4,9 @@
 @import url("../CSS/desktop_min.css") all;
 @import url("../CSS/tablet.css")  all;
 @import url("../CSS/mobile.css")  all;
+@import url("../CSS/lightslider.min.css") all;
 @import url("../CSS/form.css")  all;
+
 * {
     margin: 0;
     padding: 0;
