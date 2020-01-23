@@ -11,8 +11,10 @@ $(document).ready(function () {
 
             initDropDown(cars);
             setImagesIntoGallery(cars[0].images, cars[0].name);
+
+            return cars[0].images.length;
         })
-        .then(e =>  initImageGallery())
+        .then(countOfImages =>  initImageGallery(countOfImages))
         .catch(err => {
             console.log(err);
         });
@@ -102,14 +104,14 @@ function initDropDown(dataOfCars) {
     );
 }
 
-function initImageGallery() {
+function initImageGallery(countOfImages) {
     let gallery = $('#image-gallery');
 
    imageGallery = gallery.lightSlider({
         gallery: true,
         autoWidth: false,
         item: 1,
-        thumbItem: 3,
+        thumbItem: countOfImages,
         slideMargin: 0,
         speed:500,
         auto: false,
@@ -144,7 +146,7 @@ function setImagesIntoGallery(images, carName) {
         imageGallery && imageGallery.destroy();
         gallery.empty();
         gallery.append(imageGalleryItems);
-        initImageGallery();
+        initImageGallery(images.length);
     } else {
         gallery.append(imageGalleryItems);
     }

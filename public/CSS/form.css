@@ -17,6 +17,7 @@ label.error {
 .contact-us-form.inp .submit-container {
     display: flex !important;
     justify-content: space-between;
+    width: 105%;
 }
 
 .contact-us-form.inp .submit-container .submit-container-button {
@@ -109,15 +110,15 @@ outline: none; }
     padding-left: 5%;
 }
 
-/*.form-control:focus, .form-control:valid {
+.form-control:focus, .form-control:invalid {
     border-bottom: 2px solid #fff;
 }
-.form-control:focus + span, .form-control:valid + span {
+.form-control:focus + span, .form-control:invalid + span {
     transform: translateY(-22px) scale(0.8);
 }
-.form-control:focus + span + .border, .form-control:valid + span + .border {
+.form-control:focus + span + .border, .form-control:invalid + span + .border {
       transform: scaleX(1);
-}*/
+}
 
 .contact-us-form.inp .form-control:focus {
     border-bottom: 2px solid #fff;
