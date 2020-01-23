@@ -15,7 +15,24 @@ body{
     background: #1E1E1E;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #9b9b9b;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #be9b64;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #e2be8a;
+}
 
 @font-face {
     font-family: Anglecia;
