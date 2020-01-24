@@ -13,4 +13,8 @@ router.get('/getAll', function(req, res, next) {
     })
 });
 
+router.get('/getEnv', function (req, res, next) {
+    res.status(200).send({env: process.env.NODE_ENV});
+});
+
 module.exports = router;
