@@ -1,95 +1,146 @@
 let cars = [];
 let imageGallery = '';
 
-$(document).ready(function () {
-    $('#phone').mask('+380-0000-000-00');
+const mainAppIds = {
+    formId: 'contact-us-form',
+    dropDownId: 'cars-list',
+    imageGalleryId: 'image-gallery',
+    phoneInputId: 'phone'
+};
 
+const modalWindowIds = {
+    formId: 'modal-contact-us-form',
+    dropDownId: 'modal-cars-list',
+    imageGalleryId: 'modal-image-gallery',
+    phoneInputId: 'modal-phone'
+};
+
+$(document).ready(function () {
     axios.get('/cars/getAll')
         .then(res => res.data)
         .then(data => {
             cars = data.cars;
 
-            initDropDown(cars);
-            setImagesIntoGallery(cars[0].images, cars[0].name);
-
-            return cars[0].images.length;
+            initApp(mainAppIds);
         })
-        .then(countOfImages =>  initImageGallery(countOfImages))
         .catch(err => {
             console.log(err);
         });
 
-    $('#cars-list').change(function () {
-        let car = cars.find(car => car.id === +this.value);
 
-        setImagesIntoGallery(car.images, car.name);
-    });
+    $('#price').on('click', () => {
+        toggleModalMenu();
+
+        if($('#modal-menu').hasClass('active')) {
+            initApp(modalWindowIds);
+        } else {
+            initApp({ ...mainAppIds, reInitGallery: true});
+        }
+    })
 });
 
-$("#contact-us-form").validate({
-    rules: {
-        name: {
-            required: true,
-            minlength: 2
+function initApp({ formId, dropDownId, imageGalleryId, phoneInputId, reInitGallery = false}) {
+    if(reInitGallery) {
+        $(`#${imageGalleryId}`).empty();
+        initImageGallery(imageGalleryId,cars[0].images.length);
+    }
+
+    initFormValidation(formId);
+    initFormTextTransform(formId);
+    initPhoneMask(phoneInputId);
+    initDropDown(dropDownId,cars);
+    setImagesIntoGallery(imageGalleryId, cars[0].images, cars[0].name);
+    initImageGallery(imageGalleryId,cars[0].images.length);
+    initDropDownChange(dropDownId, imageGalleryId);
+}
+
+function toggleModalMenu() {
+    $('#modal-menu').toggleClass('active');
+    $('#price').toggleClass('active');
+}
+
+function initPhoneMask(phoneInputId) {
+    $(`#${phoneInputId}`).mask('+380-0000-000-00');
+}
+
+function initFormTextTransform(formId) {
+    $(`form#${formId} :input, form#${formId} textarea`).each(function () {
+        $(this).on('input', transformInput);
+        //$(this).on('click', transformInput);
+    });
+}
+
+function initFormValidation(formId) {
+    $(`#${formId}`).validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            email: {
+                required: true,
+                email: true,
+            },
+            phone: {
+                required: true,
+                minlength: 16,
+                maxlength: 16
+            }
         },
-        email: {
-            required: true,
-            email: true,
+        messages: {
+            name: {
+                required: "Поле для введення імені є обов'язковим",
+                minlength: "Мінімальна довжина в два символи"
+            },
+            email: {
+                required: "Поле для введення email є обов'язковим",
+                email: "Ваш email-адрес має бути в форматі name@domain.com"
+            },
+            phone: {
+                required: "Номер телефону є обов'язковим для заповнення",
+                minlength: "Номер телефону введено в не коректному форматі",
+                maxlength: "Номер телефону введено в не коректному форматі"
+            }
         },
-        phone: {
-            required: true,
-            minlength: 16,
-            maxlength: 16
-        }
-    },
-    messages: {
-        name: {
-            required: "Поле для введення імені є обов'язковим",
-            minlength: "Мінімальна довжина в два символи"
-        },
-        email: {
-            required: "Поле для введення email є обов'язковим",
-            email: "Ваш email-адрес має бути в форматі name@domain.com"
-        },
-        phone: {
-            required: "Номер телефону є обов'язковим для заповнення",
-            minlength: "Номер телефону введено в не коректному форматі",
-            maxlength: "Номер телефону введено в не коректному форматі"
-        }
-    },
-    submitHandler: function(form) {
-        let data = $(form).serializeArray().reduce((ac, cur) => {
+        submitHandler: function(form) {
+            let data = $(form).serializeArray().reduce((ac, cur) => {
                 ac[cur.name] = cur.value;
                 return ac;
-        }, {});
+            }, {});
 
-        axios.post("/sendEmail", data).then((response) => {
-            $(form).trigger('reset');
-        });
-    },
-    invalidHandler: function(event, validator) {
-        // 'this' refers to the form
-        const errors = validator.numberOfInvalids();
-        console.log(errors);
-        if (errors) {
-            const message = errors == 1
-                ? 'You missed 1 field. It has been highlighted'
-                : 'You missed ' + errors + ' fields. They have been highlighted';
-            $("div.error span").html(message);
-            $("div.error").show();
-        } else {
-            $("div.error").hide();
+            axios.post("/sendEmail", data).then((response) => {
+                $(form).trigger('reset');
+
+                if($('#modal-menu').hasClass('active')) {
+                    toggleModalMenu();
+                }
+            });
+        },
+        invalidHandler: function(event, validator) {
+            // 'this' refers to the form
+            const errors = validator.numberOfInvalids();
+            console.log(errors);
+            if (errors) {
+                const message = errors == 1
+                    ? 'You missed 1 field. It has been highlighted'
+                    : 'You missed ' + errors + ' fields. They have been highlighted';
+                $("div.error span").html(message);
+                $("div.error").show();
+            } else {
+                $("div.error").hide();
+            }
         }
+    });
+}
+
+function initDropDown(elementId,dataOfCars) {
+    let dropDown = $(`#${elementId}`);
+
+    if(dropDown.children().length > 0) {
+        dropDown.empty();
     }
-});
 
-$("form#contact-us-form :input, form#contact-us-form textarea").each(function () {
-    $(this).on('input', transformInput);
-    //$(this).on('click', transformInput);
-});
-
-function initDropDown(dataOfCars) {
-    $('#cars-list').append(
+    dropDown.append(
         [
             "<optgroup label=\"До 22-х місць\">",
             ...dataOfCars.map((car, i) => {
@@ -104,8 +155,11 @@ function initDropDown(dataOfCars) {
     );
 }
 
-function initImageGallery(countOfImages) {
-    let gallery = $('#image-gallery');
+function initImageGallery(galleryId, countOfImages) {
+    let gallery = $(`#${galleryId}`);
+
+    imageGallery && imageGallery.destroy();
+    imageGallery = '';
 
    imageGallery = gallery.lightSlider({
         gallery: true,
@@ -133,8 +187,8 @@ function transformInput() {
     }
 }
 
-function setImagesIntoGallery(images, carName) {
-    let gallery = $('#image-gallery');
+function setImagesIntoGallery(galleryId, images, carName) {
+    let gallery = $(`#${galleryId}`);
 
     let imageGalleryItems = images.map(imageUrl => {
         return `<li data-thumb="${imageUrl}"> 
@@ -146,8 +200,16 @@ function setImagesIntoGallery(images, carName) {
         imageGallery && imageGallery.destroy();
         gallery.empty();
         gallery.append(imageGalleryItems);
-        initImageGallery(images.length);
+        initImageGallery(galleryId, images.length);
     } else {
         gallery.append(imageGalleryItems);
     }
+}
+
+function initDropDownChange(dropDownId, galleryId) {
+    $(`#${dropDownId}`).change(function () {
+        let car = cars.find(car => car.id === +this.value);
+
+        setImagesIntoGallery(galleryId, [...car.images], car.name);
+    });
 }

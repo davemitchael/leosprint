@@ -6,6 +6,7 @@
 @import url("../CSS/mobile.css")  all;
 @import url("../CSS/lightslider.min.css") all;
 @import url("../CSS/form.css")  all;
+@import url("../CSS/modal-menu.css") all;
 
 * {
     margin: 0;

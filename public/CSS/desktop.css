@@ -103,6 +103,10 @@ p {
       font-weight:  lighter;
   }
 
+    .price.active:before {
+        color: #be9b64;
+    }
+
     .block_2 {
         height: 1155px;
         width: 1248px;

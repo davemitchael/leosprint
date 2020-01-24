@@ -17,12 +17,66 @@
 
 <body>
 <div class="block block_1">
+    <div id="modal-menu" class="modal-menu">
+       <div class="modal-gallery modal-menu-gallery">
+          <ul id="modal-image-gallery" class="gallery list-unstyled cS-hidden">
+
+           </ul>
+       </div>
+       <div class="inp">
+           <form class="contact-us-form inp" id="modal-contact-us-form">
+               <label class="form-group">
+                   <select id="modal-cars-list" class="cars-list" name="carName">
+
+                   </select>
+               </label>
+               <label class="form-group">
+                   <input type="text" name="name" class="form-control">
+                   <span class="input-name">Ваше ім'я <span class="required-star">*</span></span>
+                   <span class="border"></span>
+               </label>
+               <label class="form-group">
+                   <input type="text" name="email" class="form-control">
+                   <span class="input-name">Ваше email <span class="required-star">*</span></span>
+                   <span class="border"></span>
+               </label>
+               <label class="form-group">
+                   <input type="text" name="goOut" class="form-control">
+                   <span class="input-name">Виїжджаєте з</span>
+                   <span class="border"></span>
+               </label>
+               <label class="form-group">
+                   <input type="text" name="goTo" class="form-control">
+                   <span class="input-name">Прямуєте до</span>
+                   <span class="border"></span>
+               </label>
+               <label class="form-group">
+                   <input type="text" id="modal-phone" name="phone" class="form-control">
+                   <span class="input-name">Номер телефону <span class="required-star">*</span></span>
+                   <span class="border"></span>
+               </label>
+               <label class="form-group" >
+                   <textarea name="details" id="modal-details" class="form-control"></textarea>
+                   <span class="input-name">Деталі поїздки</span>
+                   <span class="border textarea-border"></span>
+               </label>
+               <label class="form-group submit-container" >
+                   <div class="submit-container-button">
+                       <input type="submit" value="Відправити" class="submit-button" />
+                   </div>
+                   <div class="rules-text">
+                       <span class="required-star">*</span> - обов'язкові поля для заповнення
+                   </div>
+               </label>
+           </form>
+       </div>
+    </div>
     <div class="button_container" id="toggle">
         <span class="top"></span>
         <span class="middle"></span>
         <span class="bottom"></span>
     </div>
-    <div class="price"></div>
+    <div id="price" class="price"></div>
     <div class="header">
         <!-- Start Humburger -->
         <!--Fin Humburger-->
@@ -305,7 +359,6 @@
         <h4>Екскурсійні тури містами України</h4>
     </div>
 </div>
-
 
 <div class="block block_5">
     <div class="discript_5">
