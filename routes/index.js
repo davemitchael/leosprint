@@ -14,6 +14,8 @@ let transporter = nodemailer.createTransport({
     }
 });
 
+const mailTo = process.env.NODE_ENV === 'development' ? 'vitaliiivantsiv@gmail.com' : 'ketskoryslan@ukr.net';
+
 function createHtmlForMail({
                                carName,
                                clientName,
@@ -54,8 +56,7 @@ router.post('/sendEmail', function (req, res, next) {
     }).then(html => {
         let mailOptions = {
             from: 'leosprint.server@gmail.com',
-            //ketskoryslan@ukr.net for production
-            to: 'vitaliiivantsiv@gmail.com',
+            to: mailTo,
             subject: 'Нове замовлення',
             text: 'У вас нове замовлення',
             html: html
