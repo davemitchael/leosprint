@@ -78,8 +78,7 @@ p {
     z-index: 997;
   display: flex;
   justify-content: center;
-  transition-duration: .3s;
-  transition-timing-function: cubic-bezier(.6,0,.41,1);
+
   }
   g {
       fill: var(--color_h4);

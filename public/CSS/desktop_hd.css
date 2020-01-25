@@ -59,6 +59,7 @@
     
 }
     .block_1 {
+        
         height: 100vh;
         width: 100%;
         display: flex;
@@ -72,7 +73,7 @@
         align-items: center;
          background: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         position: relative;
         height: 30px;
 
@@ -81,8 +82,7 @@
     z-index: 997;
     display: flex;
     justify-content: center;
-    transition-duration: .3s;
-    transition-timing-function: cubic-bezier(.6,0,.41,1);
+
     }
     g {
         fill: var(--color_h4);

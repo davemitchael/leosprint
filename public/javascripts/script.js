@@ -120,3 +120,4 @@ $(function () {
 $(document).ready(function () {
   $('#year-and-logo').append(`<p>© ${new Date().getFullYear()} Leosprint</p>`)
 });
+
