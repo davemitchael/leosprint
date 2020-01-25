@@ -32,8 +32,12 @@ $(document).ready(function () {
         toggleModalMenu();
 
         if($('#modal-menu').hasClass('active')) {
+            toggleModalContent(true);
             initApp(modalWindowIds);
+            toggleMainForm(false);
         } else {
+            toggleModalContent(false);
+            toggleMainForm(true);
             initApp({ ...mainAppIds, reInitGallery: true});
         }
     })
@@ -41,7 +45,8 @@ $(document).ready(function () {
 
 function initApp({ formId, dropDownId, imageGalleryId, phoneInputId, reInitGallery = false}) {
     if(reInitGallery) {
-        $(`#${imageGalleryId}`).empty();
+        let imageGallery =  $(`#${imageGalleryId}`);
+        imageGallery.empty();
         initImageGallery(imageGalleryId,cars[0].images.length);
     }
 
@@ -57,6 +62,33 @@ function initApp({ formId, dropDownId, imageGalleryId, phoneInputId, reInitGalle
 function toggleModalMenu() {
     $('#modal-menu').toggleClass('active');
     $('#price').toggleClass('active');
+}
+
+function toggleModalContent(show) {
+    let modalGallery = $('div.modal-gallery');
+    let modalForm = $(`#modal-contact-us-form`);
+
+    if(show) {
+        modalGallery.slideDown();
+        modalForm.slideDown();
+    }
+    else {
+        modalGallery.slideUp();
+        modalForm.slideUp();
+    }
+}
+
+function toggleMainForm(show) {
+    let mainForm = $(`#contact-us-form`);
+    let mainGallery = $(`#gallery_main`);
+
+    if(show) {
+        mainForm.slideDown();
+        mainGallery.slideDown();
+    } else {
+        mainForm.slideUp();
+        mainGallery.slideUp();
+    }
 }
 
 function initPhoneMask(phoneInputId) {
