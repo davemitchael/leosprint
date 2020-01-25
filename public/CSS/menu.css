@@ -1,4 +1,14 @@
 /* Start position button */
+:root{
+/* font-size */
+--fontSize_a: 72px;
+
+/* colors */
+ --color_a:#E4E4E7;
+--colorActive_a:#be9b64;
+
+}
+
 .button_container {
   position: fixed;
   top: 25px;
@@ -63,7 +73,7 @@
   display: flex;
   justify-content: center;
   position: fixed;
-  background: #1E1E1E;
+  background-color: rgba(30, 30, 30, 0.96);
   top: 0;
   left: 0;
   width: 100%;
@@ -84,8 +94,8 @@
   flex-direction: column;
 }
 .overlay.open li {
-  -webkit-animation: fadeInRight .5s ease forwards;
-          animation: fadeInRight .5s ease forwards;
+  -webkit-animation: fadeInLeft .6s ease forwards;
+          animation: fadeInLeft .6s ease forwards;
   -webkit-animation-delay: 150ms;
           animation-delay: 150ms;
 }
@@ -111,9 +121,9 @@
 }
 .overlay nav {
   position: relative;
-  font-size: 36px;
-  font-family:Anglecia;
-  font-weight: 500;
+  font-size: var(--fontSize_a);
+  padding: 0.3em;
+  font-family: PT Root;
   text-align: center;
     font-variant: small-caps;
 }
@@ -130,14 +140,13 @@
 .overlay ul li {
   display: block;
   height: 10%;
-  min-height: 70px;
   position: relative;
   opacity: 0;
 }
 .overlay ul li a {
   display: block;
   position: relative;
-  color: #E4E4E7;
+  color: var(--color_a);
     padding: 8px;
   text-decoration: none;
   overflow: hidden;
@@ -147,10 +156,16 @@
 }
 
 .overlay ul li a:hover {
-    color:#be9b64;
+    color: var(--colorActive_a);
 }
 
 .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
   width: 100%;
 
+}
+
+@media screen and (min-width: 20em){
+.overlay nav {
+    font-size: calc(30px + (84 - 30) * (100vw - 320px) / (1680 - 320));
+}
 }
