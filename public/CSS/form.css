@@ -29,7 +29,7 @@ label.error {
 
 .contact-us-form.inp .submit-container .rules-text {
     display: inherit;
-    width: 40%;
+    width: 68%;
     text-align: end;
 }
 
@@ -39,8 +39,7 @@ label.error {
     color: var(--color_BG);
     width: 85%;
     height: 60px;
-    font-family: inherit;
-    font-size: 18px;
+    font-size: var(--fontSize_P_form);
 }
 
 .contact-us-form.inp .submit-container .submit-button:hover {
