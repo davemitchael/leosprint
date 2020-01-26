@@ -5,9 +5,9 @@
       "name": "Mercedes Sprinter 515CDI-19 місць",
       "type": 0,
       "images": [
-        "/Img/1.jpg",
-        "/Img/7.jpg",
-        "/Img/8.jpg"
+        "/Img/ВС4114СК/1.jpg",
+        "/Img/ВС4114СК/2.jpg",
+        "/Img/ВС4114СК/3.jpg"
       ]
     },
     {
@@ -15,9 +15,9 @@
       "name": "Mercedes Sprinter 519 CDI - 20 місць ",
       "type": 0,
       "images": [
-        "/Img/2.jpg",
-        "/Img/7.jpg",
-        "/Img/8.jpg"
+        "/Img/ВС0094НР/1.jpg",
+        "/Img/ВС0094НР/2.jpg",
+        "/Img/ВС0094НР/3.jpg"
       ]
     },
     {
@@ -25,9 +25,9 @@
       "name": "Mercedes Sprinter 319 CDI - 22 місця",
       "type": 0,
       "images": [
-        "/Img/3.jpg",
-        "/Img/7.jpg",
-        "/Img/8.jpg"
+        "/Img/ВС1572ЕХ/1.jpg",
+        "/Img/ВС1572ЕХ/2.jpg",
+        "/Img/ВС1572ЕХ/3.jpg"
       ]
     },
     {
@@ -35,9 +35,9 @@
       "name": "Mercedes Sprinter 316 CDI - 20 місць",
       "type": 0,
       "images": [
-        "/Img/4.jpg",
-        "/Img/7.jpg",
-        "/Img/8.jpg"
+        "/Img/ВС6457НВ/1.jpg",
+        "/Img/ВС6457НВ/2.jpg",
+        "/Img/ВС6457НВ/3.jpg"
       ]
     },
     {
@@ -45,21 +45,21 @@
       "name": "Mercedes Sprinter 311 CDI - 17 місць",
       "type": 0,
       "images": [
-        "/Img/5.jpg",
-        "/Img/7.jpg",
-        "/Img/8.jpg"
+        "/Img/ВС1936СВ/1.jpg",
+        "/Img/ВС1936СВ/2.jpg",
+        "/Img/ВС1936СВ/3.jpg"
       ]
     },
-    {
-      "id": 5,
-      "name": "Mercedes Sprinter 413 CDI - 18 місць",
-      "type": 0,
-      "images": [
-        "/Img/6.jpg",
-        "/Img/7.jpg",
-        "/Img/8.jpg"
-      ]
-    }
+    // {
+    //   "id": 5,
+    //   "name": "Mercedes Sprinter 413 CDI - 18 місць",
+    //   "type": 0,
+    //   "images": [
+    //     "/Img/6.jpg",
+    //     "/Img/7.jpg",
+    //     "/Img/8.jpg"
+    //   ]
+    // }
   ]
 
 }
