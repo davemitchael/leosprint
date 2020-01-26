@@ -1,4 +1,3 @@
-
 //Start Slick Slider
 $('.slider').slick({
   slidesToShow: 1,
@@ -7,7 +6,7 @@ $('.slider').slick({
   arrows: true,
   dots: false,
   focusOnSelect: true,
-  cssEase: 'cubic-bezier(0.950, 0.050, 0.795, 0.035)', //defaust 'ease'
+  // cssEase: 'ease', //defaust 'ease' //disabled, but used animation will css
   touchMove: true,
   centerMode: true,
   infinite: true,

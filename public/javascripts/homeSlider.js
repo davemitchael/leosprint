@@ -1,7 +1,7 @@
   $('.home-slider').slick({
     draggable: true,
     autoplay: true,
-    autoplaySpeed: 7000,
+    autoplaySpeed: 10000,
     arrows: false,
     dots: false,
     fade: true,
@@ -11,6 +11,8 @@
     cssEase: 'ease',
     touchThreshold: 100,
     useCSS: true,
+    pauseOnHover:false,
+    pauseOnFocus:false,
     //variableWidth: true,
     responsive: [
         {
