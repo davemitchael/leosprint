@@ -1,21 +1,27 @@
 let cars = [];
 let imageGallery = '';
+let loader = '';
 
 const mainAppIds = {
     formId: 'contact-us-form',
     dropDownId: 'cars-list',
     imageGalleryId: 'image-gallery',
-    phoneInputId: 'phone'
+    phoneInputId: 'phone',
+    loaderClass: 'main-loader-container'
 };
 
 const modalWindowIds = {
     formId: 'modal-contact-us-form',
     dropDownId: 'modal-cars-list',
     imageGalleryId: 'modal-image-gallery',
-    phoneInputId: 'modal-phone'
+    phoneInputId: 'modal-phone',
+    loaderClass: 'modal-loader-container'
 };
 
 $(document).ready(function () {
+    initLoader();
+    loader.hide();
+
     axios.get('/cars/getAll')
         .then(res => res.data)
         .then(data => {
@@ -29,6 +35,7 @@ $(document).ready(function () {
 
 
     $('#price').on('click', () => {
+        loader = '';
         toggleModalMenu();
 
         if($('#modal-menu').hasClass('active')) {
@@ -40,10 +47,10 @@ $(document).ready(function () {
             toggleMainForm(true);
             initApp({ ...mainAppIds, reInitGallery: true});
         }
-    })
+    });
 });
 
-function initApp({ formId, dropDownId, imageGalleryId, phoneInputId, reInitGallery = false}) {
+function initApp({ formId, dropDownId, imageGalleryId, phoneInputId, loaderClass, reInitGallery = false}) {
     if(reInitGallery) {
         let imageGallery =  $(`#${imageGalleryId}`);
         imageGallery.empty();
@@ -57,6 +64,11 @@ function initApp({ formId, dropDownId, imageGalleryId, phoneInputId, reInitGalle
     setImagesIntoGallery(imageGalleryId, cars[0].images, cars[0].name);
     initImageGallery(imageGalleryId,cars[0].images.length);
     initDropDownChange(dropDownId, imageGalleryId);
+    initLoader(loaderClass)
+}
+
+function initLoader(loaderClass = 'main-loader-container') {
+    loader = $(`div.${loaderClass}`);
 }
 
 function toggleModalMenu() {
@@ -202,9 +214,15 @@ function initImageGallery(galleryId, countOfImages) {
         speed:500,
         auto: false,
         loop: true,
+        onBeforeStart: function() {
+            loader && loader.show();
+            gallery.parent().addClass('loading');
+        },
         onSliderLoad: function() {
            // $(`#${id}`).remove();
             gallery.removeClass('cS-hidden');
+            loader && loader.hide();
+            gallery.parent().parent().parent().removeClass('loading');
         }
     });
 }

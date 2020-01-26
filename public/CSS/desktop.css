@@ -541,6 +541,7 @@ p {
         justify-content: space-between;
         display: flex;
         padding-top: 80px;
+        position: relative;
     }
 
     .gal{
