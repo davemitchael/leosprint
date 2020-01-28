@@ -205,6 +205,17 @@ function initImageGallery(galleryId, countOfImages) {
     imageGallery && imageGallery.destroy();
     imageGallery = '';
 
+    let responsiveSettings = {
+        gallery: true,
+        autoWidth: false,
+        item: 1,
+        thumbItem: countOfImages,
+        slideMargin: 0,
+        speed:500,
+        auto: false,
+        loop: true,
+    };
+
    imageGallery = gallery.lightSlider({
         gallery: true,
         autoWidth: false,
@@ -217,55 +228,19 @@ function initImageGallery(galleryId, countOfImages) {
         responsive : [
             {
                 breakpoint:1920,
-                settings: {
-                    gallery: true,
-                    autoWidth: false,
-                    item: 1,
-                    thumbItem: countOfImages,
-                    slideMargin: 0,
-                    speed:500,
-                    auto: false,
-                    loop: true,
-                  }
+                settings: responsiveSettings
             },
             {
                 breakpoint:1024,
-                settings: {
-                    gallery: true,
-                    autoWidth: false,
-                    item: 1,
-                    thumbItem: countOfImages,
-                    slideMargin: 0,
-                    speed:500,
-                    auto: false,
-                    loop: true,
-                  }
+                settings: responsiveSettings
             },
             {
                 breakpoint:768,
-                settings: {
-                    gallery: true,
-                    autoWidth: false,
-                    item: 1,
-                    thumbItem: countOfImages,
-                    slideMargin: 0,
-                    speed:500,
-                    auto: false,
-                    loop: true,
-                  }
+                settings: responsiveSettings
             },
             {
                 breakpoint:320,
-                settings: {
-                    gallery: true,
-                    autoWidth: false,
-                    item: 1,
-                    thumbItem: countOfImages,
-                    slideMargin: 0,
-                    speed:500,
-                    auto: false,
-                    loop: true,
-                  }
+                settings: responsiveSettings
             }
         ],
         onBeforeStart: function() {

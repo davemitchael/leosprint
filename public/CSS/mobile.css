@@ -428,7 +428,6 @@ background-color: #be9b64;
  }
 .gallery_main {
   height: 195px;
-  background-image: url(../img/1.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -631,5 +630,17 @@ padding: 0;
   flex-basis: 100%;
 }
 .contact{ padding-top: 20px;}
-  
+
+    .lSSlideOuter {height: inherit}
+
+    .lSSlideWrapper {height: inherit}
+
+    .lSSlideWrapper img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+    .lSSlideOuter .lSPager.lSGallery {
+        position: absolute;
+        width: 300px !important;
+    }
 }
