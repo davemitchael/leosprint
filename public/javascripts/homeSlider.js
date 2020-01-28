@@ -13,38 +13,37 @@
     useCSS: true,
     pauseOnHover:false,
     pauseOnFocus:false,
-    //variableWidth: true,
     responsive: [
         {
           breakpoint: 1360, //1360->1920px
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 1
                     }
         }, 
         {
           breakpoint: 1024,//1024-1360px
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 1
         }
         }, 
         {
           breakpoint: 768,//768->1024px
           settings: {
             slidesToShow: 1,
-            mobileFirst: true,
             centerMode: true,
             autoplay: false,
             draggable: false,
+            mobileFirst: true
           }
         },
         {
           breakpoint: 320,//320->0 px
           settings: {
             slidesToShow: 1,
-            mobileFirst: true,
             centerMode: true,
             autoplay: false,
             draggable: false,
+            mobileFirst: true
           }
         }
       ]

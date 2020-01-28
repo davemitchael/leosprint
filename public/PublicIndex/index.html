@@ -16,7 +16,7 @@
 </head>
 
 <body ontouchstart="">
-<div id="main" class="block block_1">
+<div id="main" class="block block_1 ">
     <div class="button_container" id="toggle">
         <span class="top"></span>
         <span class="middle"></span>
@@ -35,7 +35,7 @@
 </svg> -->
 
     </div>
-    <div class="header">
+    <div class="header ">
 
         <div class="overlay" id="overlay">
             <nav class="overlay-menu">
@@ -199,7 +199,8 @@
 
 
 <div id="about_us" class="block block_2">
-    <div class="discript_2">
+    <div class="discript_2" class="numb wow zoomIn" data-wow-duration="2s" data-wow-offset="100"
+    data-wow-iteration="1">
         <h2>Коротко про компанію </h2>
     </div>
 
@@ -292,24 +293,24 @@
     </div>
 </div>
 <div class="slider">
-    <div class="item"><img src="../Img/2ndSlider/Object.png" alt="">
+    <div class="item"><img src="../Img/2ndSlider/Object.jpg" alt="">
         <h4>Поїздки по
             мальовничій Україні</h4>
     </div>
-    <div class="item"><img src="../Img/2ndSlider/wedding.jpeg" alt="">
+    <div class="item"><img src="../Img/2ndSlider/wedding.jpg" alt="">
         <h4>Обслуговувавння урочистих подій</h4>
     </div>
-    <div class="item"><img src="../Img/2ndSlider/Ukraine.jpeg" alt="">
+    <div class="item"><img src="../Img/2ndSlider/Ukraine.jpg" alt="">
         <h4>Екскурсійні тури містами України</h4>
     </div>
-    <div class="item"><img src="../Img/2ndSlider/Object.png" alt="">
+    <div class="item"><img src="../Img/2ndSlider/Object.jpg" alt="">
         <h4>Поїздки по
             мальовничій Україні</h4>
     </div>
-    <div class="item"><img src="../Img/2ndSlider/wedding.jpeg" alt="">
+    <div class="item"><img src="../Img/2ndSlider/wedding.jpg" alt="">
         <h4>Обслуговувавння урочистих подій</h4>
     </div>
-    <div class="item"><img src="../Img/2ndSlider/Ukraine.jpeg" alt="">
+    <div class="item"><img src="../Img/2ndSlider/Ukraine.jpg" alt="">
         <h4>Екскурсійні тури містами України</h4>
     </div>
 </div>
@@ -321,15 +322,12 @@
     </div>
     <div class="discript_5_1">
         <p class="p_5">Кожен вартий найяскравіших та незабутніх вражень. Тому ми пропонуємо оригінальний,
-            неповторний сервіс для вас – мандрівників, підприємців, бізнесменів, творчих людей і трендсеттерів.</p>
+            неповторний сервіс для вас – мандрівників, підприємців, бізнесменів  та творчих людей.</p>
     </div>
 
     <div class="form">
         <div class="gal">
-
-
-            <div class="modelImg" id="model-1">
-                <!-- id идентефикатор нужного изображения выбраного в селекте  -->
+            <div class="model-1">
                 <div class="gallery">
                     <div id="gallery_main" class="gallery_main">
                         <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
@@ -415,19 +413,29 @@
         </div>
     </div>
 </div>
-
+<script>
+    $(function () {
+        new WOW().init();
+        //setLanguage('en');
+        initPage('en');
+    })
+</script>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
 <script src="../lib/slick/slick.min.js"></script>
 <script src="../lib/jquery.mask.min.js"></script>
 <script src="../javascripts/homeSlider.js"></script>
+<script src="../lib/wow.js"></script>
 
 <script src="../javascripts/menu.js"></script>
 <script src="../javascripts/script.js"></script>
 <script src="../javascripts/form.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="../lib/lightslider.min.js"></script>
+
+
+<script src="../javascripts/paralax_effect.js"></script>
 </body>
 
 </html>

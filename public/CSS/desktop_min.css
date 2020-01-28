@@ -437,88 +437,38 @@ background-color: #be9b64;
   padding-top: 60px;
   margin-left: 75%;
 }
-/* Start Gallery */
+/* Gallery container */
 .gallery{
+  height: 800px;
   width: 100%;
  }
-.gallery_main {
-  height: 600px;
-  background-image: url(../img/1.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
+ 
+
+.gallery_main ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+.gallery_main li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor:pointer;
+    width: 100%;
+}
+.gallery_main img {
+    display: block;
+    height: auto;
+    max-width: 100%;
 }
 
-.gallery_main_two
-{
-  width: 100%;
-  height: 540px;
-  background-image: url(../img/7.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.gallery-list{ 
-  display: flex;
-  padding: 0px;
-  /* додаю ширину */
-  width: 50%;
-}
-.gallery-item,.two{
-  width: 200px;
-  height: 100px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-  opacity: 0.5;
-  transition: opacity 0.3s ;
-
-}
-.gallery-item.active,.gallery-item:hover,.two.active,.two:hover{
-  opacity:1;
-}
-.gallery-item img{
-  width: 100%;
-}
-.gallery-item:nth-child(1){
-  background-image: url(../img/1.jpg);
-  margin-right: 5px;
-}
-.gallery-item:nth-child(2){
-  background-image: url(../img/2.jpg);
-  margin: 0 5px;
-}
-.gallery-item:nth-child(3){
-  background-image: url(../img/3.jpg);
-  margin-left: 5px;
-}
-
-.two:nth-child(1){
-  background-image: url(../img/7.jpg);
-}
-.two:nth-child(2){
-  background-image: url(../img/8.jpg);
-}
-.two:nth-child(3){
-  background-image: url(../img/9.jpg);
-}
-.two:nth-child(4){
-  background-image: url(../img/10.jpg);
-}
-.two:nth-child(5){
-  background-image: url(../img/11.jpg);
-}
-.two:nth-child(6){
-  background-image: url(../img/12.jpg);
-}
-.modelImg {
-  display: none;
-  }
-  #model-1{
+  .model-1{
       display: flex;
   }
+  .gal{
+    width: 64%;
+    padding-top: 1.5%;
+}
   /* End Gallery */
   .form{
       width: 100%;

@@ -116,6 +116,60 @@ function initImageGallery(countOfImages) {
         speed:500,
         auto: false,
         loop: true,
+        responsive : [
+            {
+                breakpoint:1920,
+                settings: {
+                    gallery: true,
+                    autoWidth: false,
+                    item: 1,
+                    thumbItem: countOfImages,
+                    slideMargin: 0,
+                    speed:500,
+                    auto: false,
+                    loop: true,
+                  }
+            },
+            {
+                breakpoint:1024,
+                settings: {
+                    gallery: true,
+                    autoWidth: false,
+                    item: 1,
+                    thumbItem: countOfImages,
+                    slideMargin: 0,
+                    speed:500,
+                    auto: false,
+                    loop: true,
+                  }
+            },
+            {
+                breakpoint:768,
+                settings: {
+                    gallery: true,
+                    autoWidth: false,
+                    item: 1,
+                    thumbItem: countOfImages,
+                    slideMargin: 0,
+                    speed:500,
+                    auto: false,
+                    loop: true,
+                  }
+            },
+            {
+                breakpoint:320,
+                settings: {
+                    gallery: true,
+                    autoWidth: false,
+                    item: 1,
+                    thumbItem: countOfImages,
+                    slideMargin: 0,
+                    speed:500,
+                    auto: false,
+                    loop: true,
+                  }
+            }
+        ],
         onSliderLoad: function() {
            // $(`#${id}`).remove();
             gallery.removeClass('cS-hidden');
