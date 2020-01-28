@@ -29,7 +29,7 @@ label.error {
 
 .contact-us-form.inp .submit-container .rules-text {
     display: inherit;
-    width: 40%;
+    width: 68%;
     text-align: end;
 }
 
@@ -39,8 +39,7 @@ label.error {
     color: var(--color_BG);
     width: 85%;
     height: 60px;
-    font-family: inherit;
-    font-size: 18px;
+    font-size: var(--fontSize_P_form);
 }
 
 .contact-us-form.inp .submit-container .submit-button:hover {
@@ -156,11 +155,22 @@ outline: none; }
     color: black;
 }
 
+.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
+    border-radius: 0px;
+}
+
+/* gallery mini image size */
+.lSSlideOuter .lSPager.lSGallery{
+width: 500px !important;
+display: flex;
+justify-content: flex-start;
+}
+
 .lSSlideOuter .lSPager.lSGallery img {
     display: block;
     max-width: 100%;
-    height: 150px;
-    width: 270px;
+    height: 100%;
+    width: 100%;
     opacity: 0.5;
 }
 
@@ -171,4 +181,4 @@ outline: none; }
 .lSAction {
     display: none !important;
 }
-/*# sourceMappingURL=style.css.map */
+

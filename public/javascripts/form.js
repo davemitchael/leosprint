@@ -214,9 +214,63 @@ function initImageGallery(galleryId, countOfImages) {
         speed:500,
         auto: false,
         loop: true,
+        responsive : [
+            {
+                breakpoint:1920,
+                settings: {
+                    gallery: true,
+                    autoWidth: false,
+                    item: 1,
+                    thumbItem: countOfImages,
+                    slideMargin: 0,
+                    speed:500,
+                    auto: false,
+                    loop: true,
+                  }
+            },
+            {
+                breakpoint:1024,
+                settings: {
+                    gallery: true,
+                    autoWidth: false,
+                    item: 1,
+                    thumbItem: countOfImages,
+                    slideMargin: 0,
+                    speed:500,
+                    auto: false,
+                    loop: true,
+                  }
+            },
+            {
+                breakpoint:768,
+                settings: {
+                    gallery: true,
+                    autoWidth: false,
+                    item: 1,
+                    thumbItem: countOfImages,
+                    slideMargin: 0,
+                    speed:500,
+                    auto: false,
+                    loop: true,
+                  }
+            },
+            {
+                breakpoint:320,
+                settings: {
+                    gallery: true,
+                    autoWidth: false,
+                    item: 1,
+                    thumbItem: countOfImages,
+                    slideMargin: 0,
+                    speed:500,
+                    auto: false,
+                    loop: true,
+                  }
+            }
+        ],
         onBeforeStart: function() {
-            loader && loader.show();
-            gallery.parent().addClass('loading');
+           loader && loader.show();
+           gallery.parent().addClass('loading');
         },
         onSliderLoad: function() {
            // $(`#${id}`).remove();

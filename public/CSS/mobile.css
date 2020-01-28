@@ -60,11 +60,11 @@ p {
   }
   .header {
     width: 98%;
-    padding: 30px 0 0;
+    padding: 40px 0 0;
     align-items: center;
      background: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
     height: 30px;
 
@@ -170,7 +170,10 @@ g {
       text-align: left;
   }
 
-  .discript_2_2_2,.discript_2_2_2 img{width: 100%;}
+  .discript_2_2_2,.discript_2_2_2 img{
+    height: 100%;
+    width: 100%;
+  }
 
   
 
@@ -529,6 +532,7 @@ background-color: #be9b64;
   .inp{
       display: flex;
       flex-direction:column;
+      padding-top: 40px;
   }
   input,select{
       height: 82px;

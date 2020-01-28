@@ -66,11 +66,11 @@ p {
 
   .header {
     width: 98%;
-    padding: 30px 0 0;
+    padding: 20px 0 0;
     align-items: center;
      background: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
     height: 30px;
 
@@ -532,8 +532,31 @@ gallery{
 
   .inp{
       display: flex;
-      flex-direction:column;
+      width: 704px;
+      flex-wrap: wrap;
+      flex-direction:space-between;
   }
+  .contact-us-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* correct position top iput car */
+#cars-list{
+  margin-top: 0px;
+}
+
+#details{
+
+  width: 230%;
+  /* width: 704px; */
+}
+
+.contact-us-form.inp .form-group {
+  position: relative;
+  display: block;
+  margin-bottom: 40px;
+}
   input,select{
       height: 82px;
   width: 313px;
@@ -557,10 +580,7 @@ gallery{
   left: 16px;
   padding-top: 15px;
   }
-  .inline_block{
-      display: flex;
-      justify-content: space-between;
-  }
+ 
   select{
       margin-top: 34px;
       

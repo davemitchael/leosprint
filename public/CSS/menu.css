@@ -48,10 +48,10 @@
 }
 
 .button_container span:nth-of-type(2) {
-  top: 9px;
+  top: 8px;
 }
 .button_container span:nth-of-type(3) {
-  top: 18px;
+  top: 16px;
 }
 /* End position button */
 
@@ -59,16 +59,16 @@
 .button_container.active .top {
   -webkit-transform: translateY(8px) translateX(0) rotate(45deg);
           transform: translateY(8px) translateX(0) rotate(45deg);
-  background: #E4E4E7;
+  background: #be9b64;
 }
 .button_container.active .middle {
   opacity: 0;
-  background: #E4E4E7;
+  background: #be9b64;
 }
 .button_container.active .bottom {
   -webkit-transform: translateY(-8px) translateX(0) rotate(-45deg);
           transform: translateY(-8px) translateX(0) rotate(-45deg);
-  background: #E4E4E7;
+  background: #be9b64;
 }
 .button_container span {
   background: #E4E4E7;
@@ -131,7 +131,6 @@
 }
 .overlay nav {
   position: relative;
-  font-size: var(--fontSize_a);
   padding: 0.3em;
   font-family: PT Root;
   text-align: center;
@@ -154,6 +153,7 @@
   opacity: 0;
 }
 .overlay ul li a {
+  font-size: var(--fontSize_a);
   display: block;
   position: relative;
   color: var(--color_a);
@@ -175,7 +175,7 @@
 }
 
 @media screen and (min-width: 20em){
-.overlay nav {
+.overlay ul li a {
     font-size: calc(30px + (84 - 30) * (100vw - 320px) / (1680 - 320));
 }
 }
