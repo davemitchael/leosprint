@@ -66,7 +66,7 @@ p {
 
   .header {
     width: 98%;
-    padding: 20px 0 0;
+    top:25px;
     align-items: center;
      background: none;
     display: flex;
@@ -75,26 +75,37 @@ p {
     height: 30px;
 
 }
-.logo{
-  z-index: 997;
-display: flex;
-justify-content: center;
-transition-duration: .3s;
-transition-timing-function: cubic-bezier(.6,0,.41,1);
-}
-g {
-    fill: var(--color_h4);
-  }
-  .header-logo__svg {
-    width: 300px;
-    height: 100px;
-  }
 
+.logo{
+  z-index: 992;
+  display: fixed;
+  justify-content: center;
+
+  }
+  g {
+      fill: var(--color_h4);
+    }
+
+    .header-logo__svg {
+      display: flex;
+      justify-content: center;
+      width: 200px;
+      height: 60px;
+    }
+
+.black {
+  position: fixed;
+  background-color: rgb(0, 0, 0,1);
+  height: 80px;
+  z-index: 991;
+  top: 0;
+  display: flex;
+  width: 100%;
+}
 
 .price {
-  z-index: 996;
+  z-index: 999;
     text-align: right;
-    right: 0;
 }
 .price:before {
     content: "\36";
@@ -337,6 +348,7 @@ text-align: left;
   transition-timing-function: cubic-bezier(0.6, 0, 0.41, 1), cubic-bezier(0.6, 0, 0.41, 1), cubic-bezier(0.6, 0, 0.41, 1), cubic-bezier(0.6, 0, 0.41, 1);
   transition-delay: 0s, 0s, 0s, 0s;
   will-change: width,height;
+  opacity: 0.5;
 }
 /* custom right slider*/
 .item.slick-slide.slick-center + .slick-slide {
@@ -348,6 +360,7 @@ text-align: left;
   transition-delay: 0s, 0s, 0s, 0s;
   will-change: width,height;
   z-index: 10;
+  opacity: 0.5;
 }
 
 
