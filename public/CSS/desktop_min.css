@@ -66,7 +66,7 @@
 
   .header {
     width: 98%;
-    padding: 20px 0 0;
+    top:25px;
     align-items: center;
      background: none;
     display: flex;
@@ -76,7 +76,7 @@
 
 }
 .logo{
-z-index: 997;
+z-index: 992;
 display: flex;
 justify-content: center;
 transition-duration: .3s;
@@ -92,9 +92,8 @@ g {
 
 
 .price {
-  z-index: 996;
+  z-index: 999;
     text-align: right;
-    right: 0;
 }
 .price:before {
     content: "\36";
@@ -340,6 +339,7 @@ text-align: left;
     transition-timing-function: cubic-bezier(0.6, 0, 0.41, 1), cubic-bezier(0.6, 0, 0.41, 1), cubic-bezier(0.6, 0, 0.41, 1), cubic-bezier(0.6, 0, 0.41, 1);
     transition-delay: 0s, 0s, 0s, 0s;
     will-change: width,height;
+    opacity: 0.5;
   }
   /* custom right slider*/
   .item.slick-slide.slick-center + .slick-slide {
@@ -351,6 +351,7 @@ text-align: left;
     transition-delay: 0s, 0s, 0s, 0s;
     will-change: width,height;
     z-index: 10;
+    opacity: 0.5;
   }
 
 

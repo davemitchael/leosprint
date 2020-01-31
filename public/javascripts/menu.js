@@ -4,7 +4,6 @@ $(document).ready(function(){
 	  var trigger1 = $('.button_container'),
 	  wrapper = $('#overlay');
 	  trigger1.removeClass('active');
-	//   trigger1.addClass('is-closed');//need create
 	   wrapper.removeClass('open');
 		event.preventDefault();
 		var id  = $(this).attr('href'),
