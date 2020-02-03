@@ -68,7 +68,7 @@ position: relative;
 
     .header {
       width: 98%;
-      padding: 20px 0 0;
+      top:25px;
       align-items: center;
       background: none;
       display: flex;
@@ -78,7 +78,7 @@ position: relative;
 
   }
   .logo{
-    z-index: 997;
+    z-index: 992;
   display: flex;
   justify-content: center;
 
@@ -93,9 +93,8 @@ position: relative;
 
 
   .price {
-    z-index: 996;
+    z-index: 999;
       text-align: right;
-      right: 0;
   }
   .price:before {
       content: "\36";
@@ -127,6 +126,7 @@ position: relative;
         text-align: right;
         display: flex;
         justify-content: flex-end;
+        animation-fill-mode: forwards;
 
 
 
