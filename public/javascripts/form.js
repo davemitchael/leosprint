@@ -104,7 +104,7 @@ function toggleMainForm(show) {
 }
 
 function initPhoneMask(phoneInputId) {
-    $(`#${phoneInputId}`).mask('+(00Z)-000-00-0000', {
+    $(`#${phoneInputId}`).mask('0ZZ-ZZZ-ZZ-ZZZZ', {
         translation:  {'Z': {pattern: /[0-9]/, optional: true}}
     });
 }
@@ -129,7 +129,7 @@ function initFormValidation(formId) {
             },
             phone: {
                 required: true,
-                minlength: 15,
+               // minlength: 15,
                 maxlength: 16
             }
         },
@@ -144,7 +144,7 @@ function initFormValidation(formId) {
             },
             phone: {
                 required: "Номер телефону є обов'язковим для заповнення",
-                minlength: "Номер телефону введено в не коректному форматі",
+               // minlength: "Номер телефону введено в не коректному форматі",
                 maxlength: "Номер телефону введено в не коректному форматі"
             }
         },
