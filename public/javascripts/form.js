@@ -104,7 +104,9 @@ function toggleMainForm(show) {
 }
 
 function initPhoneMask(phoneInputId) {
-    $(`#${phoneInputId}`).mask('+380-0000-000-00');
+    $(`#${phoneInputId}`).mask('+(00Z)-000-00-0000', {
+        translation:  {'Z': {pattern: /[0-9]/, optional: true}}
+    });
 }
 
 function initFormTextTransform(formId) {
@@ -127,7 +129,7 @@ function initFormValidation(formId) {
             },
             phone: {
                 required: true,
-                minlength: 16,
+                minlength: 15,
                 maxlength: 16
             }
         },

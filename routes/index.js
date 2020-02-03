@@ -51,7 +51,7 @@ router.post('/sendEmail', function (req, res, next) {
         goOut: req.body.goOut || 'Не вказано',
         goTo: req.body.goTo || 'Не вказано',
         email: req.body.email,
-        phone: req.body.phone.replace(/-/g, ''),
+        phone: `+${req.body.phone.replace(/\D/g, '')}`,
         details: req.body.details
     }).then(html => {
         let mailOptions = {
