@@ -88,22 +88,20 @@
         fill: var(--color_h4);
       }
       .header-logo__svg {
-        width: 300px;
+        width: 400px;
         height: 100px;
       }
 
   
     .price {
+        display: flex;
         z-index: 999;
         text-align: right;
     }
-    .price:before {
-        content: "\36";
-        font-family: var(--fontFamily_arrow);
-        font-size: calc(var(--fontSize_arrow)*1.5);
-        color:var(--color_P);
-        font-weight:  lighter;
-    }
+    .price__svg{
+        width: 30px;
+        height: 30px;
+      }
     
 
     .block_2 {
@@ -635,4 +633,10 @@ button{
     margin: 0;
     border: none;
 }
+#loader {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 }

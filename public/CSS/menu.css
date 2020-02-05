@@ -22,8 +22,9 @@
 }
 
 .price {
+  cursor: pointer;
   position: fixed;
-  top: 25px;
+  top: 25px !important;
   right: 25px !important;
 }
 
@@ -164,9 +165,63 @@
 
 }
 
+/* ToolTip for humburger and price btn */
+.menu_text, 
+.price_text{
+  position: absolute; 
+  display: none;
+  color:var(--color_P);
+  font-family: PT Root;
+   font-size: var(--fontSize_label);
+   opacity:0; /*Елемент повністю прозорий (невидимий)*/
+transition: 2s ; /*Швидкість переходу стану елемента*/
+animation: show 4s 1; /* Вказуємо назву анімації, її час і кількість повторів*/
+animation-fill-mode: forwards; /* Щоб елемент залишався в кінцевому стані анімації */
+animation-delay: 2s; /* Затримка перед початком */
+}
+@keyframes show{
+  0%{
+  opacity:0;
+  }
+  25% {
+    opacity:1;
+    }
+  50% {
+  opacity:1;
+  }
+  85% {
+    opacity:1;
+    }
+  100% {
+    opacity:0;
+    }
+  }
 
+.menu_text{
+  left: 40px !important;
+}
+.price_text{
+  right: 10px !important;
+}
+.button_container:hover .menu_text,
+.price:hover .price_text {
+  display: flex;
+  position: relative; 
+}
+.active:hover .menu_text{
+  display: none;
+}
 @media screen and (min-width: 20em){
 .overlay ul li a {
     font-size: calc(30px + (84 - 30) * (100vw - 320px) / (1680 - 320));
 }
+
 }
+@media all and (min-width: 320px) and (max-width: 1023px){
+  .button_container:hover .menu_text,
+.price:hover .price_text {
+  display: none;
+  position: relative; 
+}
+  
+  }

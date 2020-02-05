@@ -1,7 +1,8 @@
-  $('.home-slider').slick({
+$('.home-slider').slick({
     draggable: true,
     autoplay: true,
     autoplaySpeed: 10000,
+    lazyload:'progressive',//lazy load image
     arrows: false,
     dots: false,
     fade: true,
@@ -48,6 +49,7 @@
         }
       ]
   })
+
 //   .on('setPosition', function (event, slick) {
 //     slick.$slides.css('height', slick.$slideTrack.height() + 'px');
 // });

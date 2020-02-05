@@ -28,7 +28,9 @@
    --paddingTop:60px;
  } 
   
-  
+body{
+  scroll-behavior: smooth;
+}
   
  h2 {
   font-family: var(--fontFamily_discript);
@@ -89,7 +91,7 @@ p {
     .header-logo__svg {
       display: flex;
       justify-content: center;
-      width: 200px;
+      width: 240px;
       height: 60px;
     }
 
@@ -107,13 +109,11 @@ p {
   z-index: 999;
     text-align: right;
 }
-.price:before {
-    content: "\36";
-    font-family: var(--fontFamily_arrow);
-    font-size: calc(var(--fontSize_arrow)*1.5);
-    color:var(--color_P);
-    font-weight:  lighter;
+.price__svg{
+  width: 30px;
+  height: 30px;
 }
+
 
 
   .block_2 {
@@ -368,7 +368,7 @@ text-align: left;
  transition-duration: .8s; 
    transform: scale(1); 
   transition-timing-function: cubic-bezier(.6,0,.41,1);
- 
+  opacity: 1;
 }
 
 

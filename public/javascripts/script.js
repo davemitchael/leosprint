@@ -3,6 +3,7 @@ $('.slider').slick({
   slidesToShow: 1,
   slidesToScroll: 3,
   centerPadding: '390px',
+  lazyload:'progressive',//lazy load image
   arrows: true,
   dots: false,
   focusOnSelect: true,
@@ -99,3 +100,11 @@ imgs.each(function () {
   $(this).hide();
 });
 
+
+//Restar animations ToolTip for humburger and price btn
+$(function() {
+  $(".menu_text,.price_text").hover(function() {
+      var el = $(this);
+el.before( el.clone(true) ).remove();
+  });
+});

@@ -26,6 +26,12 @@
    /* paddding */
    --paddingTop:60px;
  } 
+
+ html, body {
+  scroll-behavior: smooth;
+}
+
+
  h2 {
   font-family: var(--fontFamily_discript);
   font-size: var(--fontSize_h2);
@@ -74,13 +80,12 @@ p {
   z-index: 992;
   display: fixed;
   justify-content: center;
-
   }
   g {
       fill: var(--color_h4);
     }
     .header-logo__svg {
-      width: 300px;
+      width: 240px;
       height: 100px;
     }
 
@@ -96,16 +101,15 @@ p {
 
 
 .price {
+  display: flex;
   z-index: 999;
     text-align: right;
 }
-.price:before {
-    content: "\36";
-    font-family: var(--fontFamily_arrow);
-    font-size: calc(var(--fontSize_arrow)*1.5);
-    color:var(--color_P);
-    font-weight:  lighter;
+.price__svg{
+  width: 30px;
+  height: 30px;
 }
+
 
 
   .block_2 {
