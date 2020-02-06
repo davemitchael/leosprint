@@ -671,4 +671,7 @@ cursor: pointer;
   margin: 0px 18px;
   border: none;
 }
+.landscape-splash {
+  display: none;
+}
 }

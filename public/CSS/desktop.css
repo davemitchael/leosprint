@@ -65,6 +65,7 @@ p {
         justify-content: center;
 position: relative;
     }
+    
 
     .header {
       width: 98%;
@@ -588,6 +589,9 @@ text-decoration: none;
   position: fixed;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
+}
+.landscape-splash {
+  display: none;
 }
 }
 

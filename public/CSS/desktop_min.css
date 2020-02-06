@@ -61,7 +61,6 @@
       width: 100%;
       display: flex;
       justify-content: center;
-
   }
 
   .header {
@@ -103,12 +102,12 @@ g {
 
 
   .block_2 {
-      width: 960px;
-      align-items: center;
-      background: #1e1e1e;
-      display: flex;
-      margin: 0 auto;
-      flex-direction: column;
+   width: 960px;
+  align-items: center;
+   background: #1e1e1e;
+ display: flex;
+ margin: 0 auto;
+flex-direction: column;
 
   }
 
@@ -510,9 +509,7 @@ background-color: #be9b64;
    label {
       color: #9b9b9b;
     }
-    /* .inp label span{
-      display: flex;
-  } */
+
     
     .inp label+input:focus  {
       color: #9b9b9b;
@@ -588,5 +585,8 @@ text-decoration: none;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
 }
+.landscape-splash {
+  display: none;
 
+}
 }

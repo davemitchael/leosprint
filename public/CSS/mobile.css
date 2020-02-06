@@ -1,4 +1,4 @@
-@media only all and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px)  {
   :root{
     /* font-size */
    --fontSize_h2: 36px;
@@ -646,6 +646,46 @@ padding: 0;
   margin: 16px 0px;
   flex-basis: 100%;
 }
-.contact{ padding-top: 20px;}
+.contact{ padding-top: 20px;
+}
+.landscape-splash {
+  display: none;
+}
   
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+
+  .landscape-splash {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #191919;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.landscape-splash__message {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.landscape-splash__message p {
+  font-family:  PT Root;
+  font-size: var(--fontSize_p);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.landscape-splash__message svg {
+  width: 22px;
+  height: 30px;
+padding-bottom: 20px;
+}
 }
