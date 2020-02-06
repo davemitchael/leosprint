@@ -653,7 +653,7 @@ padding: 0;
 }
   
 }
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media screen and (min-width: 320px) and (max-width: 812px)  and (orientation: landscape) {
 
   .landscape-splash {
     position: fixed;
