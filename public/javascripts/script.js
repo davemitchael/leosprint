@@ -48,7 +48,7 @@ $('.slider').slick({
         slidesToShow: 1,
         slidesToScroll: 3,
         centerPadding: '0px',
-        cssEase: 'linear', //defaust 'ease' 
+        cssEase: 'cubic-bezier(0.7, 0, 0.3, 1', //defaust 'ease' 
       }
     }
   ]
