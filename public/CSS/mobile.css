@@ -268,7 +268,7 @@ p {
   z-index: 200;
   width: 100%;
   max-width: 100%;
-display: flex;
+display: block;
 justify-content: space-between;
 padding-top: var(--paddingTop);
 }
