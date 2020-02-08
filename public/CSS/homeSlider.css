@@ -10,7 +10,10 @@
 .slideshow * {
   outline: none;
 }
-
+/* filter for img */
+/* .home-slider .slick-slide {
+  filter: brightness(.9);
+} */
 .home-slider.slider-track {
   transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
 }
