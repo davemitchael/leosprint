@@ -10,9 +10,7 @@
 .slideshow * {
   outline: none;
 }
-/* .home-slider{
-  position: fixed;
-} */
+
 .home-slider.slider-track {
   transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
 }
