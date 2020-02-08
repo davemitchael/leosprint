@@ -104,7 +104,7 @@ function toggleMainForm(show) {
 }
 
 function initPhoneMask(phoneInputId) {
-    $(`#${phoneInputId}`).mask('0ZZ-ZZZ-ZZ-ZZZZ', {
+    $(`#${phoneInputId}`).mask('+0ZZ-ZZZ-ZZ-ZZZZ', {
         translation:  {'Z': {pattern: /[0-9]/, optional: true}}
     });
 }

@@ -542,8 +542,10 @@ background-color: #be9b64;
 
   .inp{
       display: flex;
-      flex-direction:column;
-      padding-top: 40px;
+      flex-direction: column;
+      padding-top: 49px;
+      padding-left: 12%;
+      padding-right: 10%;
   }
   input,select{
       height: 82px;
