@@ -90,17 +90,6 @@ g {
     height: 100px;
   }
 
-
-  .price {
-    display: flex;
-    z-index: 999;
-  }
-  .price__svg{
-    width: 30px;
-    height: 30px;
-  }
-
-
   .block_2 {
       width: 960px;
       align-items: center;

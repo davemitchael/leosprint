@@ -103,15 +103,6 @@ p {
   width: 100%;
 }
 
-.price {
-  z-index: 999;
-    text-align: right;
-}
-.price__svg{
-  width: 30px;
-  height: 30px;
-}
-
 
   .block_2 {
       width: 704px;

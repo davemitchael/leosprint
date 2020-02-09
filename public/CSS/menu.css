@@ -24,8 +24,16 @@
   .price {
     cursor: pointer;
     position: fixed;
+    z-index: 999;
     top: 25px !important;
     right: 25px !important;
+  }
+  .price__svg{
+    top: 25px !important;
+    right: 25px !important;
+    position: fixed;
+    width: 30px;
+    height: 30px;
   }
   
   .button_container:hover {
@@ -201,7 +209,7 @@
     left: 40px !important;
   }
   .price_text{
-    right: 10px !important;
+    right: 40px !important;
   }
   .button_container:hover .menu_text,
   .price:hover .price_text {

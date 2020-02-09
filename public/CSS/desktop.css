@@ -92,14 +92,7 @@ position: relative;
     }
 
 
-    .price {
-      display: flex;
-      z-index: 999;
-    }
-    .price__svg{
-      width: 30px;
-      height: 30px;
-    }
+    
 
      .block_2 {
         height: 1155px;
