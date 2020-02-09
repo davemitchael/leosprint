@@ -456,8 +456,14 @@ position: relative;
     cursor:pointer;
     width: 100%;
 }
+.gallery_main {
+  height: 580px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
 .gallery_main img {
-    display: block;
+      display: block;
     height: auto;
     max-width: 100%;
 }
