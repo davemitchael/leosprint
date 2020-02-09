@@ -120,7 +120,7 @@
     }
 
     .modal-gallery.modal-menu-gallery {
-        margin-top: 44%;
+        padding-top: 0%;
     }
 
     .modal-gallery.modal-menu-gallery .lSSlideOuter .lSPager.lSGallery img {
@@ -248,7 +248,7 @@
     }
 
     .modal-gallery.modal-menu-gallery {
-        margin-top: 80%;
+        padding-top: 0%;
     }
 
     #modal-menu {
