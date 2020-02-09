@@ -227,6 +227,7 @@ function initImageGallery(galleryId, countOfImages) {
         speed:500,
         auto: false,
         loop: true,
+        autoWidth:true,
         responsive : [
             {
                 breakpoint:1920,
