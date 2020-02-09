@@ -99,3 +99,11 @@ imgs.each(function () {
   $(this).hide();
 });
 
+
+//Restar animations ToolTip for humburger and price btn
+$(function() {
+  $(".menu_text,.price_text").hover(function() {
+      var el = $(this);
+el.before( el.clone(true) ).remove();
+  });
+});

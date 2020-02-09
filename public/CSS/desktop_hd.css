@@ -88,23 +88,21 @@
         fill: var(--color_h4);
       }
       .header-logo__svg {
-        width: 300px;
+        width: 400px;
         height: 100px;
       }
 
   
     .price {
+        display: flex;
         z-index: 999;
         text-align: right;
     }
-    .price:before {
-        content: "\36";
-        font-family: var(--fontFamily_arrow);
-        font-size: calc(var(--fontSize_arrow)*1.5);
-        color:var(--color_P);
-        font-weight:  lighter;
-    }
-    
+    .price__svg{
+        width: 30px;
+        height: 30px;
+      }
+  
 
     .block_2 {
         height: 1155px;
@@ -635,4 +633,27 @@ button{
     margin: 0;
     border: none;
 }
+#loader {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lSSlideOuter {height: inherit}
+
+.lSSlideWrapper {height: inherit}
+
+.lSSlideWrapper img {
+    max-height: 100%;
+    max-width: 100%;
+}
+.lSSlideOuter .lSPager.lSGallery {
+    position: absolute;
+    width: 500px !important;
+}
+
+.landscape-splash {
+    display: none;
+  }
+  
 }
