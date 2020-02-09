@@ -38,6 +38,7 @@ $('.slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         centerPadding: '240px',
+        cssEase: 'linear', //defaust 'ease' 
       }
     },
     {
@@ -45,13 +46,22 @@ $('.slider').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 3,
-        centerPadding: '0px'
+        centerPadding: '0px',
+        cssEase: 'linear', //defaust 'ease' 
       }
     }
   ]
+// bug fixed last jump slider
+}).on('beforeChange', (event, slick, currentSlide, nextSlide) => {
+  if (currentSlide !== nextSlide) {
+      document.querySelectorAll('.slick-center + .slick-cloned').forEach((next) => {
+          // timeout required or Slick will overwrite the classes
+          setTimeout(() => next.classList.add('slick-current', 'slick-center'));
+      });
+  }
 });
 
-// Script slick slider responsive resize slick slider
+// Script responsive resize slick slider
 $(window).resize(function () {
   $('.slider').not('.slick-initialized').slick('resize');
 });
@@ -88,3 +98,4 @@ imgs.each(function () {
   });
   $(this).hide();
 });
+
