@@ -65,3 +65,8 @@ $(window).resize(function () {
 $(window).on('orientationchange', function () {
   $('.home-slider').not('.slick-initialized').slick('resize');
 });
+
+$(".home-slider")[0].slick.setPosition();
+
+//If that doesn't work try
+$(".home-slider").slick("refresh");
