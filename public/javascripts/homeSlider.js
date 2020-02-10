@@ -41,8 +41,7 @@ $('.home-slider').slick({
         breakpoint: 320,//320->0 px
         settings: {
           slidesToShow: 1,
-          centerMode: true,
-          centerPadding: '0px',
+          centerMode: false,
           touchThreshold: 100,
           autoplay: false,
           draggable: false,
@@ -73,5 +72,5 @@ $(window).on('orientationchange', function () {
 // $("element").slick("refresh");
 
 window.addEventListener("load", () => {
-  setTimeout(function(){$('.home-slider').slick("refresh");}, 1000);
+  setTimeout(function(){$('.home-slider').slick("refresh");}, 10000);
 });
