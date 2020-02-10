@@ -72,5 +72,5 @@ $(window).on('orientationchange', function () {
 // $("element").slick("refresh");
 
 window.addEventListener("load", () => {
-  setTimeout(function(){$('.home-slider').slick("refresh");}, 10000);
+  setTimeout(function(){$('.home-slider').slick("refresh");}, 100);
 });
