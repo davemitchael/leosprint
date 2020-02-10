@@ -42,6 +42,7 @@ $('.home-slider').slick({
         settings: {
           slidesToShow: 1,
           centerMode: true,
+          touchThreshold: 100,
           autoplay: false,
           draggable: false,
           mobileFirst: true
