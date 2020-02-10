@@ -67,7 +67,11 @@ $(window).on('orientationchange', function () {
   $('.home-slider').not('.slick-initialized').slick('resize');
 });
 
-$("element")[0].slick.setPosition();
+// $("element")[0].slick.setPosition();
 
-//If that doesn't work try
-$("element").slick("refresh");
+// //If that doesn't work try
+// $("element").slick("refresh");
+
+window.addEventListener("load", () => {
+  setTimeout(function(){$('.home-slider').slick("refresh");}, 1000);
+});
