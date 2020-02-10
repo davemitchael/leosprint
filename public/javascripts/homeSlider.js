@@ -41,7 +41,8 @@ $('.home-slider').slick({
         breakpoint: 320,//320->0 px
         settings: {
           slidesToShow: 1,
-          centerMode: false,
+          centerMode: true,
+          centerPadding: '0px',
           touchThreshold: 100,
           autoplay: false,
           draggable: false,
