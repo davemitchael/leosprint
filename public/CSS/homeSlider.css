@@ -2,7 +2,7 @@
   display: block;
   position: absolute;
   z-index: 1;
-  height: 100vh;
+  height: auto;
   max-width: 100%;
   margin: 0 auto;
   color: rgba(0, 0, 0, 0.5);
@@ -19,7 +19,7 @@
 }
 .home-slider.image_screen {
   
-  height: 100%;
+  height: auto;
   position: relative;
   z-index: 1;
 }
