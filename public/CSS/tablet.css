@@ -479,37 +479,7 @@ gallery{
 .gallery-item img{
   width: 100%;
 }
-.gallery-item:nth-child(1){
-  background-image: url(../img/1.jpg);
-  margin-right: 5px;
-}
-.gallery-item:nth-child(2){
-  background-image: url(../img/2.jpg);
-  margin: 0 5px;
-}
-.gallery-item:nth-child(3){
-  background-image: url(../img/3.jpg);
-  margin-left: 5px;
-}
 
-.two:nth-child(1){
-  background-image: url(../img/7.jpg);
-}
-.two:nth-child(2){
-  background-image: url(../img/8.jpg);
-}
-.two:nth-child(3){
-  background-image: url(../img/9.jpg);
-}
-.two:nth-child(4){
-  background-image: url(../img/10.jpg);
-}
-.two:nth-child(5){
-  background-image: url(../img/11.jpg);
-}
-.two:nth-child(6){
-  background-image: url(../img/12.jpg);
-}
 .modelImg {
   display: none;
   }
