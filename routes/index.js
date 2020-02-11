@@ -14,7 +14,7 @@ let transporter = nodemailer.createTransport({
     }
 });
 
-const mailTo = process.env.NODE_ENV === 'development' ? 'vitaliiivantsiv@gmail.com' : 'ketskoryslan@ukr.net';
+const mailTo = process.env.NODE_ENV === 'development' ? 'tarastykhyy@gmail.com' : 'ketskoryslan@ukr.net';
 
 function createHtmlForMail({
                                carName,
