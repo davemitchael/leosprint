@@ -40,6 +40,7 @@ label.error {
     width: 85%;
     height: 60px;
     font-size: var(--fontSize_P_form);
+    -webkit-appearance: none; 
 }
 
 .contact-us-form.inp .submit-container .submit-button:hover {
