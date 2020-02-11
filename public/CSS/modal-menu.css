@@ -323,7 +323,7 @@
     #modal-menu .inp{
         display: flex;
         flex-direction: column;
-        padding-top: 10%;
+        padding-top: 15%;
         /* padding-left: 12%;
         padding-right: 10%; */
     }
