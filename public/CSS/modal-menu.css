@@ -244,9 +244,9 @@
 /*mobile*/
 @media only all and (min-width: 320px) and (max-width: 767px) {
     .modal-menu {
-        height: 100%;
+        height: 100vh;
         display: flex;
-        padding: 30% 5% 0 5%;
+        padding: 20% 5% 0 5%;
         align-items: center;
         flex-direction: column;
         justify-content: center;
@@ -258,7 +258,6 @@
         bottom: 100%;
         right: 0;
         left: 0;
-        max-height: 100%;
         opacity: 0;
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
@@ -289,6 +288,7 @@
     }
 
     .gallery_main > .lSSlideOuter {
+        max-width: 300px;
         height: 400px !important;
         background-repeat: no-repeat;
         background-size: 100% 100%;
