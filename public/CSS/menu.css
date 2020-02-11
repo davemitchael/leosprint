@@ -216,7 +216,8 @@
     display: flex;
     position: relative; 
   }
-  .active:hover .menu_text{
+  .active:hover .menu_text,
+  .active:hover .price_text{
     display: none;
   }
   @media screen and (min-width: 20em){

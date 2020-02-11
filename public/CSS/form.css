@@ -76,7 +76,8 @@ outline: none; }
 .contact-us-form.inp .form-group {
     position: relative;
     display: block;
-    margin-bottom: 30px; }
+    margin-bottom: 26px; 
+}
 .contact-us-form.inp .form-group span {
     font-size: var(--fontSize_P_form);
     font-family: PT Root !important;

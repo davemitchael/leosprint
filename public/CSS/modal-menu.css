@@ -70,6 +70,68 @@
     height: auto;
     max-width: 100%;
 }
+/* desktop_hd */
+@media only all and (min-width: 1920px){
+ .modal-gallery.modal-menu-gallery .lSSlideOuter {
+    height: 764px !important;
+    }
+
+    #modal-contact-us-form .form-group {
+        position: relative;
+        display: block;
+        margin-bottom: 54px;
+    }
+    #contact-us-form .form-group {
+        position: relative;
+        display: block;
+        margin-bottom: 36px;
+    }
+}
+/* desktop */
+@media only all and (min-width: 1360px) and (max-width:1919px){
+    #modal-contact-us-form .form-group {
+        position: relative;
+        display: block;
+        margin-bottom: 24px;
+    }
+    #contact-us-form .form-group {
+        position: relative;
+        display: block;
+        margin-bottom: 32px;
+    }
+
+}
+/* desktop_min*/
+@media only all and (min-width: 1024px) and (max-width: 1359px) {
+    .lSSlideOuter .lSPager.lSGallery {
+        /* width: 300px !important; */
+        display: flex;
+        justify-content: flex-start;
+    }
+    .lSSlideOuter .lSPager.lSGallery {
+        width: 600px !important;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .gallery_main>.lSSlideOuter .lSGallery {
+        width: 644px !important;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    #modal-contact-us-form .form-group {
+        position: relative;
+        display: block;
+        margin-bottom: 18px;
+    }
+    #contact-us-form .form-group {
+        width: 300px;
+        position: relative;
+        display: block;
+        margin-bottom: 28px;
+    }
+
+}
 
 /*tablet*/
 @media only all and (min-width: 768px) and (max-width: 1023px) {
@@ -99,7 +161,7 @@
 
     .modal-menu .inp {
         display: flex;
-        padding-top: 24%;
+        padding-top: 34%;
         padding-right: 0 !important;
         /* padding-left: 3%; */
     }
@@ -120,33 +182,24 @@
     }
 
     .modal-gallery.modal-menu-gallery {
-        padding-top: 10%;
+        padding-top: 64%;
     }
 
-    .modal-gallery.modal-menu-gallery .lSSlideOuter .lSPager.lSGallery img {
-        height: 20vh;
-        width: 100%;
-    }
-
-    .lSSlideOuter {
-        height: 60vh !important;
+  
+    .modal-gallery.modal-menu-gallery>.lSSlideOuter {
+        height: 568px !important;
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center;
     }
 
-    .modal-gallery.modal-menu-gallery .lSSlideOuter {
-        height: inherit;
+    .gallery-main >.lSSlideOuter {
+        height: 528px !important;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
     }
-
-    .modal-gallery.modal-menu-gallery .lSSlideWrapper {
-        height: 88%;
-    }
-
-    .modal-gallery.modal-menu-gallery .lSPager {
-        height: 20%;
-    }
-
+    
     .right {
         flex: 50%;
     }
@@ -191,9 +244,9 @@
 /*mobile*/
 @media only all and (min-width: 320px) and (max-width: 767px) {
     .modal-menu {
-        height: 100vh;
+        height: 100%;
         display: flex;
-        padding: 5% 5% 0 5%;
+        padding: 30% 5% 0 5%;
         align-items: center;
         flex-direction: column;
         justify-content: center;
@@ -215,18 +268,27 @@
     }
 
     .modal-menu-gallery {
-        width: 100%;
+        /*width: 100%;*/
         /* height: 54vh; */
     }
+    .lSSlideWrapper {
+        max-width: 100%;
+        overflow: hidden;
+        height: auto;
+    }
     .lSSlideOuter {
-        height: 274px !important;
+        height: 400px !important;
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center;
     }
+    .modal-menu-gallery {
+        width: 58%;
+        /* height: 100%; */
+    }
 
     .gallery_main > .lSSlideOuter {
-        height: 216px !important;
+        height: 400px !important;
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center;
@@ -247,11 +309,21 @@
         /* justify-content: center; */
     }
 
-    .modal-gallery.modal-menu-gallery {
+    /*.modal-gallery.modal-menu-gallery {
         padding-top: 10%;
-    }
+    }*/
 
     #modal-menu {
         overflow-x: hidden;
+    }
+    .form{
+    max-width: 288px;
+    }
+    #modal-menu .inp{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5%;
+        /* padding-left: 12%;
+        padding-right: 10%; */
     }
 }

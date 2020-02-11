@@ -421,11 +421,14 @@
     padding-top:var(--paddingTop);
     margin-left: 75%;
 }
+.form{
+    padding-top: var(--paddingTop);
+}
 .gallery{
     width: 100%;
    }
 .gallery_main {
-    height: 580px;
+    height: 612px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -476,6 +479,7 @@
     }
 
     .inp{
+        margin-top: -8px !important;
         display: flex;
         flex-direction:column;
     }
