@@ -277,13 +277,14 @@
         height: auto;
     }
     .lSSlideOuter {
-        height: 400px !important;
+        width: 288px;
+        height: 100% !important;
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center;
     }
     .modal-menu-gallery {
-        width: 58%;
+        /* width: 58%; */
         /* height: 100%; */
     }
 
