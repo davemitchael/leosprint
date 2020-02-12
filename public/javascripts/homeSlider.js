@@ -18,13 +18,23 @@ $('.home-slider').slick({
       {
         breakpoint: 1360, //1360->1920px
         settings: {
-          slidesToShow: 1
-                  }
+          slidesToShow: 1,
+          centerMode: true,
+          autoplay: true,
+          autoplaySpeed: 10000,
+          draggable: false,
+          mobileFirst: true,
+       }
       }, 
       {
         breakpoint: 1024,//1024-1360px
         settings: {
-          slidesToShow: 1
+          slidesToShow: 1,
+          centerMode: true,
+          autoplay: true,
+          autoplaySpeed: 10000,
+          draggable: false,
+          mobileFirst: true,
       }
       }, 
       {
@@ -33,8 +43,9 @@ $('.home-slider').slick({
           slidesToShow: 1,
           centerMode: true,
           autoplay: true,
+          autoplaySpeed: 10000,
           draggable: false,
-          mobileFirst: true
+          mobileFirst: true,
         }
       },
       {
