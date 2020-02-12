@@ -21,7 +21,6 @@ $('.home-slider').slick({
           slidesToShow: 1,
           centerMode: true,
           autoplay: true,
-          autoplaySpeed: 10000,
           draggable: false,
           mobileFirst: true,
        }
@@ -32,7 +31,6 @@ $('.home-slider').slick({
           slidesToShow: 1,
           centerMode: true,
           autoplay: true,
-          autoplaySpeed: 10000,
           draggable: false,
           mobileFirst: true,
       }
@@ -42,8 +40,7 @@ $('.home-slider').slick({
         settings: {
           slidesToShow: 1,
           centerMode: true,
-          autoplay: true,
-          autoplaySpeed: 10000,
+          autoplay: false,
           draggable: false,
           mobileFirst: true,
         }
@@ -54,7 +51,7 @@ $('.home-slider').slick({
           slidesToShow: 1,
           centerMode: false,
           touchThreshold: 100,
-          autoplay: true,
+          autoplay: false,
           draggable: false,
           mobileFirst: true
         }
