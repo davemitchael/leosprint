@@ -38,21 +38,23 @@ $('.home-slider').slick({
       {
         breakpoint: 768,//768->1024px
         settings: {
-          slidesToShow: 1,
-          centerMode: true,
-          autoplay: false,
-          draggable: false,
-          mobileFirst: true,
+          // slidesToShow: 1,
+          // centerMode: true,
+          // autoplay: false,
+          // draggable: false,
+          // mobileFirst: true,
+          unslick: true
         }
       },
       {
         breakpoint: 320,//320->0 px
         settings: {
-          slidesToShow: 1,
-          centerMode: false,
-          autoplay: false,
-          draggable: false,
-          mobileFirst: true,
+          // slidesToShow: 1,
+          // centerMode: false,
+          // autoplay: false,
+          // draggable: false,
+          // mobileFirst: true,
+          unslick: true
         }
       }
     ]
