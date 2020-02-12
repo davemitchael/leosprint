@@ -1,4 +1,7 @@
-$('.home-slider').slick({
+
+
+$slick_slider = $('.home-slider');
+settings = {
   draggable: true,
   autoplay: true,
   autoplaySpeed: 10000,
@@ -14,19 +17,20 @@ $('.home-slider').slick({
   useCSS: true,
   pauseOnHover:false,
   pauseOnFocus:false,
-});
+}
+$slick_slider.slick(settings);
 
 // reslick only if it's not slick()
 $(window).on('resize', function() {
-  if (window.innerWidth >= 768) {
-    $('.home-slider').slick('unslick');
-    sliderIsLive = false;
-  }
-  else {
-    if (sliderIsLive) {
-      $('.home-slider').slick();
-      sliderIsLive = true;
+  if ($(window).width() < 768) {
+    if ($slick_slider.hasClass('slick-initialized')) {
+      $slick_slider.slick('unslick');
     }
+    return
+  }
+
+  if (!$slick_slider.hasClass('slick-initialized')) {
+    return $slick_slider.slick(settings);
   }
 })
 
