@@ -56,10 +56,10 @@ p {
       max-width: 100%;
       display: flex;
       justify-content: center;
-      background-image: url(../Img/1ndSlider/home_slide_1.jpg);
+      /* background-image: url(../Img/1ndSlider/home_slide_1.jpg);
       background-repeat: no-repeat;
       background-size: 100% 100%;
-      background-position: center;
+      background-position: center; */
 
 
   }
