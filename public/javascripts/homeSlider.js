@@ -40,7 +40,8 @@ $('.home-slider').slick({
         settings: {
           slidesToShow: 1,
           centerMode: true,
-          autoplay: false,
+          autoplay: true,
+          autoplaySpeed: 10000,
           draggable: false,
           mobileFirst: true,
         }
@@ -50,7 +51,8 @@ $('.home-slider').slick({
         settings: {
           slidesToShow: 1,
           centerMode: false,
-          autoplay: false,
+          autoplay: true,
+          autoplaySpeed: 10000,
           draggable: false,
           mobileFirst: true,
         }
