@@ -354,6 +354,7 @@ text-align: left;
 
 
 .item.slick-slide.slick-center {
+  opacity: 1;
  transition-duration: .8s; 
    transform: scale(1); 
   transition-timing-function: cubic-bezier(.6,0,.41,1);
