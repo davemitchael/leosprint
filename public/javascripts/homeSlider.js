@@ -21,7 +21,7 @@ $(window).on('resize', function() {
   if (window.innerWidth <= 768) {
     $('.home-slider').slick('unslick');
     sliderIsLive = false,
-    $('.home-slider').removeClass(".image_screen img");
+    $('.image_screenr>img').remove();
   }
   else {
     if (sliderIsLive) {
