@@ -55,10 +55,11 @@ height: 100vh;
     object-position: center;
     height: 100vh;
       width: 100%;
-      transition: none;
+      transition: none !important;
+      transform:none !important;
     }
     .home-slider .image_screen.slick-active img {
-    transform:none;
-
+    transform:none !important;
+    animation:none !important;
     }
 }
