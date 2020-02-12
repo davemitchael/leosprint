@@ -72,6 +72,10 @@ $(window).on('orientationchange', function () {
 // $("element").slick("refresh");
 
 // fix bug first slider Timeout
-window.addEventListener("load", () => {
-  setTimeout(function(){$('.home-slider').slick("refresh");}, 10);
-});
+// window.addEventListener("load", () => {
+//   setTimeout(function(){$('.home-slider').slick("refresh");}, 10);
+// });
+$("home-slider")[0].slick.setPosition();
+
+//If that doesn't work try
+$("home-slider").slick("refresh");
