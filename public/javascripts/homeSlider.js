@@ -16,23 +16,17 @@ $('.home-slider').slick({
   pauseOnFocus:false,
 });
 
-$slick_slider = $('.home-slider');
-settings = {
-  // some settings
-}
-$slick_slider.slick(settings);
-
 // reslick only if it's not slick()
 $(window).on('resize', function() {
-  if ($(window).width() < 768) {
-    if ($slick_slider.hasClass('slick-initialized')) {
-      $slick_slider.slick('unslick');
-    }
-    return
+  if (window.innerWidth <= 768) {
+    $('.home-slider').slick('unslick');
+    sliderIsLive = false;
   }
-
-  if (!$slick_slider.hasClass('slick-initialized')) {
-    return $slick_slider.slick(settings);
+  else {
+    if (sliderIsLive) {
+      $('.home-slider').slick();
+      sliderIsLive = true;
+    }
   }
 })
 
