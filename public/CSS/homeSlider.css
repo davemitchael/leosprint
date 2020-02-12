@@ -49,17 +49,3 @@ height: 100vh;
   }
 }
 
-@media only all and (min-width: 320px) and (max-width: 767px) {
-  .home-slider .image_screen img {
-    object-fit: cover;
-    object-position: center;
-    height: 100vh;
-      width: 100%;
-      transition: none !important;
-      transform:none !important;
-    }
-    .home-slider .image_screen.slick-active img {
-    transform:none !important;
-    animation:none !important;
-    }
-}

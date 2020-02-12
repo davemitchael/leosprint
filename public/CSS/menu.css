@@ -232,5 +232,12 @@
     display: none;
     position: relative; 
   }
+  .price__svg{
+    top: 25px !important;
+    right: 25px !important;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+  }
     
     }
