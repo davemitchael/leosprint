@@ -82,5 +82,5 @@ $(window).on('orientationchange', function () {
 
 // fix bug first slider Timeout
 window.addEventListener("load", () => {
-  setTimeout(function(){$('.home-slider').slick("refresh");}, 0.1);
+  process.nextTick(function(){$('.home-slider').slick("refresh");}, 1000);
 });
