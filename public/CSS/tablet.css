@@ -280,7 +280,7 @@ padding-top: var(--paddingTop);
 .item.slick-slide {
   padding: 10px auto;
   width: 800px;
-  height: 320px;
+  height: 520px;
   overflow: hidden;
   transition: transform .4s;
   position: relative; 
@@ -303,7 +303,7 @@ padding-top: var(--paddingTop);
 
 .slick-prev {
 
-left: 100px;
+left: 200px;
 text-align: left;
 /* custom position left arrow*/
 }
@@ -315,7 +315,7 @@ text-align: left;
 }
 
 .slick-next {
-  right: 100px;
+  right: 200px;
   text-align: right;
   /* custom position right arrow*/
 }
@@ -411,7 +411,9 @@ cursor: pointer;
 .slick-prev:hover, .slick-next:hover{
 background-color: var(--color_arrow);
 }
-
+.slick-prev, .slick-next {
+  top:112%
+}
 
 
 /*END slider*/
@@ -426,7 +428,7 @@ background-color: var(--color_arrow);
 
 }
 .discript_5 {
-  padding-top: calc(var(--paddingTop)*2);
+  padding-top: calc(var(--paddingTop)*2.8);
     display: inherit;
     width: 50%;
     margin-right: 50%;
