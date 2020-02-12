@@ -42,6 +42,7 @@ $('.home-slider').slick({
           centerMode: true,
           autoplay: true,
           autoplaySpeed: 10000,
+          lazyload:'progressive',
           draggable: false,
           mobileFirst: true,
         }
@@ -53,6 +54,7 @@ $('.home-slider').slick({
           centerMode: false,
           autoplay: true,
           autoplaySpeed: 10000,
+          lazyload:'progressive',
           draggable: false,
           mobileFirst: true,
         }
