@@ -18,10 +18,9 @@ $('.home-slider').slick({
 
 // reslick only if it's not slick()
 $(window).on('resize', function() {
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth >= 768) {
     $('.home-slider').slick('unslick');
-    sliderIsLive = false,
-    $('.image_screenr>img').remove();
+    sliderIsLive = false;
   }
   else {
     if (sliderIsLive) {
