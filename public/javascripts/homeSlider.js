@@ -75,4 +75,4 @@ $(window).on('orientationchange', function () {
 // window.addEventListener("load", () => {
 //   (function(){$('.home-slider').slick("refresh");}, 10000);
 // });
-$(".home-slider")[0].slick.setPosition();
+$("home-slider").slick("refresh");
