@@ -52,7 +52,7 @@ $('.home-slider').slick({
           centerMode: false,
           autoplay: false,
           draggable: false,
-          mobileFirst: true
+          mobileFirst: true,
         }
       }
     ]
