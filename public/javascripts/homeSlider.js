@@ -20,7 +20,8 @@ $('.home-slider').slick({
 $(window).on('resize', function() {
   if (window.innerWidth <= 768) {
     $('.home-slider').slick('unslick');
-    sliderIsLive = false;
+    sliderIsLive = false,
+    removeClass(".image_screen");
   }
   else {
     if (sliderIsLive) {
