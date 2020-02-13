@@ -294,7 +294,7 @@ padding-top: var(--paddingTop);
 .item h4{
   position: absolute;
   left: 10%;
-  bottom: 20%;
+  bottom: 10%;
   color: white;
   opacity:1;
   z-index: 15;
