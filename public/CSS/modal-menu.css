@@ -355,7 +355,7 @@
         overflow-x: hidden;
     }
     .form{
-    max-max-width: 88%;
+    max-width: 88%;
     }
     #modal-menu .inp{
         display: flex;
