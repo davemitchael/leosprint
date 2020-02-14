@@ -507,7 +507,7 @@ background-color: var(--color_arrow);
   .inp{
       padding-top: 16%;
       display: flex;
-      width: 704px;
+      max-width: 672px;
       flex-wrap: wrap;
       flex-direction: space-between;
   }
@@ -523,8 +523,7 @@ background-color: var(--color_arrow);
 
 #details{
 
-  width: 230%;
-  /* width: 704px; */
+  width: 672px;
 }
 
 .contact-us-form.inp .form-group {
