@@ -445,7 +445,7 @@ background-color: var(--color_arrow);
   margin-left: 25%;
 }
 /* Start Gallery */
-gallery{
+.gallery{
   width: 100%;
  }
 .gallery_main {
@@ -455,15 +455,7 @@ gallery{
   background-position: center;
 }
 
-.gallery_main_two
-{
-  width: 100%;
-  height: 540px;
-  background-image: url(../img/7.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
+
 .gallery-list{ 
   display: flex;
   padding: 0px;
@@ -508,6 +500,9 @@ gallery{
       width: 100%;
          
   }
+  .contact-us-form.inp .form-group span.border {
+    display: none !important;
+}
 
   .inp{
       padding-top: 16%;
