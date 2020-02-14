@@ -2,7 +2,7 @@ $('.home-slider').slick({
   draggable: true,
   autoplay: true,
   autoplaySpeed: 10000,
-  lazyload:'progressive',//lazy load image
+  lazyload:'ondemand',//lazy load image
   arrows: false,
   dots: false,
   fade: true,
@@ -30,9 +30,10 @@ $('.home-slider').slick({
         settings: {
           slidesToShow: 1,
           centerMode: true,
+          lazyload:'ondemand',
           autoplay: true,
           draggable: false,
-          mobileFirst: true,
+          // mobileFirst: true,
       }
       }, 
       {
@@ -42,9 +43,9 @@ $('.home-slider').slick({
           centerMode: true,
           autoplay: true,
           autoplaySpeed: 10000,
-          lazyload:'progressive',
+          lazyload:'ondemand',
           draggable: false,
-          mobileFirst: true,
+          // mobileFirst: true,
         }
       },
       {
@@ -54,7 +55,7 @@ $('.home-slider').slick({
           centerMode: false,
           autoplay: true,
           autoplaySpeed: 10000,
-          lazyload:'progressive',
+          lazyload:'ondemand',
           draggable: false,
           mobileFirst: true,
         }
@@ -83,7 +84,8 @@ $(window).on('orientationchange', function () {
 // $("element").slick("refresh");
 
 // fix bug first slider Timeout
-window.addEventListener("load", () => {
-  setTimeout(function(){$('.home-slider').slick("refresh");}, 1000);
-  callback();
-});
+//  window.addEventListener("load", () => {
+//    setTimeout(function(){$('.home-slider').slick("refresh");}, 1000);
+//    callback();
+// });
+

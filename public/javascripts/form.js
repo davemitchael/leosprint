@@ -42,6 +42,8 @@ $(document).ready(function () {
             toggleModalContent(true);
             initApp(modalWindowIds);
             toggleMainForm(false);
+            $('.overlay').removeClass('open');  //remove windows menu when activated price windows
+            $('#toggle').removeClass('active');  //remove windows menu when activated price windows
         } else {
             toggleModalContent(false);
             toggleMainForm(true);

@@ -17,10 +17,10 @@ $(document).ready(function(){
 
 		if($('#modal-menu').hasClass('active')) {
 			toggleModalMenu();
-
 			toggleModalContent(false);
 			toggleMainForm(true);
 			initApp({ ...mainAppIds, reInitGallery: true});
 		}
+		
 	});
   });

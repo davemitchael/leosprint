@@ -285,6 +285,11 @@ padding-top: var(--paddingTop);
   transition: transform .4s;
   position: relative; 
 }
+/* .element-invisible {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+} */
 
 .slider img {
   max-width: 100%;
@@ -428,7 +433,7 @@ background-color: var(--color_arrow);
 
 }
 .discript_5 {
-  padding-top: calc(var(--paddingTop)*2.8);
+  padding-top: calc(var(--paddingTop)*3.8);
     display: inherit;
     width: 50%;
     margin-right: 50%;
