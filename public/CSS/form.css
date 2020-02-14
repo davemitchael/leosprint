@@ -40,7 +40,8 @@ label.error {
     width: 85%;
     height: 60px;
     font-size: var(--fontSize_P_form);
-    -webkit-appearance: none; 
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 .contact-us-form.inp .submit-container .submit-button:hover {
@@ -150,6 +151,9 @@ outline: none; }
 
 .contact-us-form.inp .cars-list {
     font-size: var(--fontSize_P_form);
+    -webkit-appearance: none;
+    border-radius: 0;
+    font-family: PT Root;
     background: none;
     width: 105%;
     padding-left: 5%;
