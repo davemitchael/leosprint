@@ -64,6 +64,7 @@ src: url("../Font/Montserrat/Montserrat-SemiBold.ttf"); }
 
 .contact-us-form.inp input, textarea, button {
     -webkit-appearance: none;
+    border-radius: 0;
     color: #fff;
     font-size: 15px;
 }
