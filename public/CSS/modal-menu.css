@@ -89,6 +89,10 @@
 }
 /* desktop */
 @media only all and (min-width: 1360px) and (max-width:1919px){
+    .modal-menu-gallery {
+        width: 65%;
+        height: auto;
+    }
     #modal-contact-us-form .form-group {
         position: relative;
         display: block;
