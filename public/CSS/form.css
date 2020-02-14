@@ -31,7 +31,7 @@ label.error {
     display: inherit;
     width: 68%;
     text-align: end;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .contact-us-form.inp .submit-container .submit-button {
@@ -43,7 +43,7 @@ label.error {
     font-size: var(--fontSize_P_form);
     -webkit-appearance: none;
     border-radius: 0;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .contact-us-form.inp .submit-container .submit-button:hover {

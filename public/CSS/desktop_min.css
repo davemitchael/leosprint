@@ -471,6 +471,7 @@ background-color: #be9b64;
   }
 
   .inp{
+    padding-left: 10px;
       display: flex;
       flex-direction:column;
   }
