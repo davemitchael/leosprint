@@ -116,6 +116,7 @@ outline: none; }
     background: none;
     font-family: inherit;
     padding-left: 5%;
+    -webkit-appearance: none;
 }
 
 .form-control:focus, .form-control:invalid {
