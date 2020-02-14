@@ -63,6 +63,7 @@ font-family: "Montserrat-SemiBold";
 src: url("../Font/Montserrat/Montserrat-SemiBold.ttf"); }
 
 .contact-us-form.inp input, textarea, button {
+    -webkit-appearance: none;
     color: #fff;
     font-size: 15px;
 }
@@ -116,7 +117,7 @@ outline: none; }
     background: none;
     font-family: inherit;
     padding-left: 5%;
-    -webkit-appearance: none;
+    
 }
 
 .form-control:focus, .form-control:invalid {
