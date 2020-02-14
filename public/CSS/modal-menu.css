@@ -33,7 +33,7 @@
     padding-right: 4%;
 } */
 .modal-menu-gallery {
-    width: 65%;
+    max-width: 65%;
     height: auto;
 }
 
@@ -79,12 +79,12 @@
     #modal-contact-us-form .form-group {
         position: relative;
         display: block;
-        margin-bottom: calc((100%-758)/6);
+        margin-bottom:46px;
     }
     #contact-us-form .form-group {
         position: relative;
         display: block;
-        margin-bottom: 36px;
+        margin-bottom: 20px;
     }
 }
 /* desktop */
