@@ -101,12 +101,12 @@
     #contact-us-form .form-group {
         position: relative;
         display: block;
-        margin-bottom: 32px;
+        margin-bottom: 20px;
     }
     #modal-contact-us-form .form-group {
         position: relative;
         display: block;
-        margin-bottom: calc((100%-758)/12) !important;
+        margin-bottom: 20px;
     }
 
 }
