@@ -519,7 +519,7 @@ background-color: var(--color_arrow);
 
 /* correct position top iput car */
 #cars-list{
-  margin-top: 0px;
+  margin-top: -6px;
 }
 
 #details{
