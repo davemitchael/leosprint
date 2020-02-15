@@ -256,16 +256,16 @@ g {
   z-index: 200;
   width: 100%;
   max-width: 100%;
-display: flex;
-justify-content: space-between;
+display: block;
 padding-top: var(--paddingTop);
 }
 
-
+.slick-slider .slick-list {
+  transform: none;
+}
 
 .item.slick-slide {
   /* width: 900px; */
-  height: 420px;
   overflow: hidden;
   transition: transform .4s;
   position: relative; 
@@ -274,6 +274,7 @@ padding-top: var(--paddingTop);
 
 
 .slider img {
+  height: 300px;
   max-width: 100%;
   width: 100%;
 }

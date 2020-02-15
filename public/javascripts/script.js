@@ -1,4 +1,5 @@
 //Start Slick Slider
+
 $('.slider').slick({
   slidesToShow: 1,
   slidesToScroll: 3,
@@ -15,13 +16,16 @@ $('.slider').slick({
   speed: 1000,
   useCSS: true,
   mobileFirst:true,
-  // variableWidth:true,
   responsive: [
     {
       breakpoint: 1360, //1360->1920px
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 3
+        slidesToScroll: 3,
+        centerMode: true,
+        mobileFirst:true,
+        lazyload:'ondemand',
+        centerPadding: '390px',
       }
     },
     {
@@ -29,7 +33,11 @@ $('.slider').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 3,
-        centerPadding: '300px',
+        centerMode: true,
+        lazyload:'ondemand',
+        centerPadding: '280px',
+        draggable: false,
+        mobileFirst: true,
       }
     },
     {
@@ -37,17 +45,38 @@ $('.slider').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerPadding: '240px',
-        cssEase: 'linear', //defaust 'ease' 
+        centerMode: true,
+        lazyload:'ondemand',
+        centerPadding: '200px',
+        draggable: false,
+        mobileFirst: true,
+
       }
     },
     {
-      breakpoint: 320,//320->0 px
+      breakpoint: 500,//tablet
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        cssEase: 'ease',
+        lazyload:'ondemand',
         centerPadding: '0px',
-        cssEase: 'linear', //defaust 'ease' 
+        draggable: false,
+        mobileFirst: true,
+      }
+    },
+    {
+      breakpoint: 320,//mobile
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        cssEase: 'ease',
+        lazyload:'ondemand',
+        centerPadding: '0px',
+        draggable: false,
+        mobileFirst: true,
       }
     }
   ]
@@ -60,14 +89,33 @@ $('.slider').slick({
       });
   }
 });
+// $(window).resize(function () {
+//   $('.home-slider').not('.slick-initialized').slick('resize');
+// });
+// $(window).on('orientationchange', function () {
+//   $('.home-slider').not('.slick-initialized').slick('resize');
+// });
 
+$(".slider").on('click', function(e) {
+  e.preventDefault();
+  $slider.slick('refresh');
+
+});
+
+$slider.on('reInit', function(event, slick) {
+    console.log('reinitalized');
+});
 // Script responsive resize slick slider
-$(window).resize(function () {
-  $('.slider').not('.slick-initialized').slick('resize');
-});
-$(window).on('orientationchange', function () {
-  $('.slider').not('.slick-initialized').slick('resize');
-});
+// var element=(".slider")
+// $(element).on('setPosition', function() {
+//   var slidesShown = $(element).slick('slickGetOption', 'slidesToShow');
+//   var numberOfSlides = $(element).find('.slick-slide').length;
+
+//   if (slidesShown === numberOfSlides) {
+//     $(element).find('.slick-track').css('transform', 'translate3d(0px, 0px, 0px)');
+//   }
+// });
+
 // Script slick slider create img center
 var imgs = $('.slider img');
 imgs.each(function () {

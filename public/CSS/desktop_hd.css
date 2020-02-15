@@ -257,8 +257,7 @@
     z-index: 200;
     width: 100%;
     max-width: 100%;
-	display: flex;
-	justify-content: space-between;
+	display: block;
     padding-top: var(--paddingTop);
 }
 
@@ -339,6 +338,7 @@
   
   
   .item.slick-slide.slick-center {
+    opacity: 1;
    transition-duration: .8s; 
      transform: scale(1); 
     transition-timing-function: cubic-bezier(.6,0,.41,1);

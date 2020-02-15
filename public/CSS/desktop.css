@@ -257,13 +257,13 @@ position: relative;
     }
 
     /*START slider*/
+    
 
 .slider {
     z-index: 200;
     width: 100%;
     max-width: 100%;
-	display: flex;
-	justify-content: space-between;
+	display: block;
   padding-top: var(--paddingTop);
 }
 
@@ -272,7 +272,6 @@ position: relative;
   .item.slick-slide {
     padding: 10px auto;
     width: 800px;
-    height: 600px;
     overflow: hidden;
     transition: transform .4s;
     position: relative;

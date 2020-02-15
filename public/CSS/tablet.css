@@ -172,6 +172,9 @@ p {
     height: auto;
     width: 100%;
     max-height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
   }
   .p_3,
   .p_4 {
@@ -270,30 +273,31 @@ p {
   z-index: 200;
   width: 100%;
   max-width: 100%;
-display: flex;
-justify-content: space-between;
+display: block;
 padding-top: var(--paddingTop);
 }
 
 
+.slick-slider .slick-list {
+  transform: none;
+}
 
 .item.slick-slide {
   padding: 10px auto;
   width: 800px;
-  height: 520px;
+  /* height: 520px; */
   overflow: hidden;
   transition: transform .4s;
   position: relative; 
 }
-/* .element-invisible {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-} */
+
 
 .slider img {
   max-width: 100%;
   width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
 }
 
 .item h4{
@@ -649,3 +653,40 @@ cursor: pointer;
       display: none;
     }
 }
+/* 
+@media screen and (min-width: 768px) and (max-width: 900px)  and (orientation: portrait) {
+
+  .landscape-splash {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color_BG);
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.landscape-splash__message {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.landscape-splash__message p {
+  font-family:  PT Root;
+  font-size: var( --fontSize_h4);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.landscape-splash__message svg {
+  width: 22px;
+  height: 30px;
+padding-bottom: 20px;
+}
+} */

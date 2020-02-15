@@ -217,11 +217,13 @@
     }
 
     .modal-gallery.modal-menu-gallery {
+        width: 100%;
         padding-top: 8%;
     }
 
   
     .modal-gallery.modal-menu-gallery>.lSSlideOuter {
+        width: 100%;
         height: auto !important;
         background-repeat: no-repeat;
         background-size: 100% 100%;
