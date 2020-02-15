@@ -18,14 +18,14 @@ $('.slider').slick({
   mobileFirst:true,
   responsive: [
     {
-      breakpoint: 1360, //1360->1920px
+      breakpoint: 1360, //1361->1920px
       settings: {
         slidesToShow: 1,
         slidesToScroll: 3,
         centerMode: true,
         mobileFirst:true,
         lazyload:'ondemand',
-        centerPadding: '390px',
+        centerPadding: '380px',
       }
     },
     {
@@ -35,7 +35,7 @@ $('.slider').slick({
         slidesToScroll: 3,
         centerMode: true,
         lazyload:'ondemand',
-        centerPadding: '280px',
+        centerPadding: '300px',
         draggable: false,
         mobileFirst: true,
       }
