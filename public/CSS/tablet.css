@@ -500,10 +500,7 @@ background-color: var(--color_arrow);
       flex-direction: column;
   }
 
-  .gal{
-      width: 100%;
-         
-  }
+
   .contact-us-form.inp .form-group span.border {
     display: none !important;
 }

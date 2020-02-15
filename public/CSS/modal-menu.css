@@ -217,7 +217,7 @@
     }
 
     .modal-gallery.modal-menu-gallery {
-        width: 100%;
+        max-width: 100%;
         padding-top: 8%;
     }
 
