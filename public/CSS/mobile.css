@@ -557,7 +557,14 @@ padding: 0;
 .contact-us-form.inp .form-group span {
   padding-left: 2%;
 }
-.contact{ padding-top: 20px;}
+.contact{ padding-top: 20px;
+}
+
+#loader {
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
 
     .lSSlideOuter {height: inherit}
 
