@@ -6,7 +6,7 @@
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     position: fixed;
-    z-index: 998;
+    z-index: 997;
     background-color: var(--color_BG);
     bottom: 100%;
     right: 0;
