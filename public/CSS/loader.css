@@ -1,7 +1,9 @@
 .modal-loader-container {
     opacity: 1;
-    left: 32%;
-    top: 33%;
+    top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
     position: absolute;
     z-index: 999;
     display: none;
@@ -9,8 +11,10 @@
 
 .main-loader-container {
     opacity: 1;
-    left: 29%;
-    top: 34%;
+    top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
     position: absolute;
     z-index: 999;
     display: none;
