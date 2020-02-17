@@ -138,7 +138,7 @@ p {
       height: 650px;
       display: flex;
       flex-direction: column-reverse;
-      padding-top: var(--paddingTop);
+    
   }
 
   .discript_2_2_1 {
