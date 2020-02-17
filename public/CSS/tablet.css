@@ -173,12 +173,9 @@ p {
       max-width: 50%;
   }
 
-  .discript_2_2 .discript_2_2_2 >img {
-    width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
+  .discript_2_2 .discript_2_2_2 img {
+    width:auto; 
+    max-width:100%;
   }
   .p_3,
   .p_4 {
