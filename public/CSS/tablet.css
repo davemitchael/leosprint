@@ -164,6 +164,8 @@ p {
       justify-content: flex-end;
   }
   .discript_2_2 .discript_2_2_2{
+    height: auto;
+    max-height: 100%;
       display: inherit;
       width: 50%;
   }
@@ -229,7 +231,7 @@ p {
   }
 
   .servis {
-      flex-basis: 46%;
+      flex-basis: 50%;
       padding-top: var(--paddingTop);
       /* height: 120px; */
       /* margin-left: 176px;*/
@@ -238,7 +240,7 @@ p {
 
 
   .servis p {
-      width: 70%;
+      width: 80%;
       padding-top: 16px;
       color: var(--color_form_P);
   

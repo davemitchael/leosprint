@@ -35,7 +35,7 @@ $('.slider').slick({
           slidesToScroll: 3,
           centerMode: true,
           lazyload:'ondemand',
-          centerPadding: '300px',
+          centerPadding: '200px',
           draggable: false,
           mobileFirst: true,
         }

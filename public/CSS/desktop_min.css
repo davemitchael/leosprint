@@ -90,6 +90,16 @@ g {
     height: 100px;
   }
 
+  .black {
+    position: fixed;
+    background-color: rgb(0, 0, 0,1);
+    height: 80px;
+    z-index: 998;
+    top: 0;
+    display: flex;
+    width: 100%;
+  }
+
   .block_2 {
       width: 960px;
       align-items: center;
@@ -296,7 +306,7 @@ padding-top: var(--paddingTop);
 
 .slick-prev {
 
-  left: 140px;
+  left: 100px;
 text-align: left;
 /* custom position left arrow*/
 }
@@ -308,7 +318,7 @@ text-align: left;
 }
 
 .slick-next {
-  right: 140px;
+  right: 100px;
   text-align: right;
   /* custom position right arrow*/
 }
@@ -324,7 +334,7 @@ text-align: left;
 
    /* custom left slider*/
    .item.slick-slide {
-    transform: scale(0.7)  translate(-250px);
+    transform: scale(0.7)  translate(-100px);
     transition: transform .6s cubic-bezier(.6,0,.41,1),min-width .6s cubic-bezier(.6,0,.41,1),opacity .6s cubic-bezier(.6,0,.41,1),-webkit-transform .6s cubic-bezier(.6,0,.41,1);
     transition-property: transform, min-width, opacity, -webkit-transform;
     transition-duration: 0.6s, 0.6s, 0.6s, 0.6s;
@@ -335,7 +345,7 @@ text-align: left;
   }
   /* custom right slider*/
   .item.slick-slide.slick-center + .slick-slide {
-    transform: scale(0.7) translate(250px);
+    transform: scale(0.7) translate(100px);
     transition: transform .6s cubic-bezier(.6,0,.41,1),min-width .6s cubic-bezier(.6,0,.41,1),opacity .6s cubic-bezier(.6,0,.41,1),-webkit-transform .6s cubic-bezier(.6,0,.41,1);
     transition-property: transform, min-width, opacity, -webkit-transform;
     transition-duration: 0.6s, 0.6s, 0.6s, 0.6s;
