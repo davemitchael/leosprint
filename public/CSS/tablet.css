@@ -118,7 +118,7 @@ p {
       width: 50%;
       padding-top: var(--paddingTop);
       margin-right: 50%;
-      text-align: right;
+      text-align: left;
       display: flex;
       justify-content: flex-end;
 
