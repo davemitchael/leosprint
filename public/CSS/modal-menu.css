@@ -339,6 +339,7 @@
     }
 
     .gallery_main .lSSlideOuter .lSPager.lSGallery {
+         margin-top: 0px !important;
         width: 100% !important;
         display: flex;
         /* justify-content: center; */
