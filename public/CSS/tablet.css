@@ -149,7 +149,6 @@ p {
 
 
   .discript_2_2 {
-    height: auto;
       width: 100%;
       justify-content: space-evenly;
       display: flex;
@@ -159,23 +158,23 @@ p {
 
 
   .discript_2_2 .discript_2_2_1{
-  
-    display: flex;
+      display: inherit;
       flex-direction: column;
       width: 50%;
       justify-content: flex-end;
   }
   .discript_2_2 .discript_2_2_2{
-    align-items: stretch;
-    height: auto;
+    height: 300px;
     max-height: 100%;
-      display: flex;
-      max-width: 50%;
+      display: inherit;
+      width: 50%;
   }
 
   .discript_2_2 .discript_2_2_2 img {
-    width:auto; 
+
     max-width:100%;
+    height: auto;
+
   }
   .p_3,
   .p_4 {
