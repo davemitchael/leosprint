@@ -149,6 +149,7 @@ p {
 
 
   .discript_2_2 {
+    height: auto;
       width: 100%;
       justify-content: space-evenly;
       display: flex;
