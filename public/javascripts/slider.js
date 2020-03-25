@@ -67,7 +67,7 @@ $('.slider').slick({
         }
       },
       {
-        breakpoint: 320,//mobile
+        breakpoint: 319,//mobile
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

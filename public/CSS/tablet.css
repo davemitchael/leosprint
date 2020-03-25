@@ -653,6 +653,10 @@
     background: #fff;
     flex-direction: inherit;
   }
+  .zholud-logo__svg{
+    width: 60px;
+    fill: #1E1E1E;
+    }
 
   .block_6 p {
     color: var(--color_BG);
