@@ -28,6 +28,8 @@ label.error {
 }
 
 .contact-us-form.inp .submit-container .rules-text {
+    font-family: PT Root !important;
+    font-size: var(--fontSize_P_form);
     display: inherit;
     width: 68%;
     text-align: end;
