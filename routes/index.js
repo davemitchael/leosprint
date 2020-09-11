@@ -10,7 +10,8 @@ let transporter = nodemailer.createTransport({
     secure: true,
     auth: {
         user: 'leosprint.server@gmail.com',
-        pass: 'Leosprint2020'
+        pass: 'pqlsrxdqmrrealvb'
+		//pass: 'Leosprint2020'
     }
 });
 
