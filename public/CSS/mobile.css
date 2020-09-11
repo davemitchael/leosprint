@@ -279,7 +279,7 @@ padding-top: var(--paddingTop);
 
 .slick-prev {
 
-left: 100px;
+left: calc((100% - 288px) *0.5 + 20px);
 text-align: left;
 /* custom position left arrow*/
 }
@@ -291,7 +291,7 @@ text-align: left;
 }
 
 .slick-next {
-  right: 100px;
+  right: calc((100% - 288px) *0.5 + 20px);
   text-align: right;
   /* custom position right arrow*/
 }
@@ -383,8 +383,8 @@ text-align: left;
 .slick-prev,.slick-next{
 border: solid 1px #be9b64;
 background: none;
-height: 72px;
-width: 72px;
+height: 60px;
+width: 60px;
 z-index: 20;
 cursor: pointer;
 }
@@ -526,7 +526,10 @@ cursor: pointer;
   background: #fff;
   flex-direction: column;
 }
-
+.zholud-logo__svg{
+  width: 60px;
+  fill: #1E1E1E;
+  }
 .block_6 p{
   color: var(--color_BG);
 

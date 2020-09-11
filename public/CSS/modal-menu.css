@@ -42,9 +42,9 @@
     width: 100%;
 } */
 
-.modal-gallery.modal-menu-gallery .lSSlideOuter {
+/* .modal-gallery.modal-menu-gallery .lSSlideOuter {
     height: 90vh;
-}
+} */
 
 /* .modal-gallery.modal-menu-gallery .lSSlideWrapper {
     height: 80%;
@@ -107,6 +107,12 @@
         position: relative;
         display: block;
         margin-bottom: 20px;
+    }
+
+    .modal-gallery.modal-menu-gallery .lSSlideWrapper{
+        max-height: 600px !important;
+        max-width: 100%;
+        overflow: hidden;
     }
 
 }
@@ -198,7 +204,12 @@
         display: flex;
         padding-top: 16%;
         padding-right: 0 !important;
+         max-width: auto;
         /* padding-left: 3%; */
+    }
+    #modal-menu .inp {
+         max-width:900px;
+
     }
 
     #modal-menu .contact-us-form.inp .form-control{

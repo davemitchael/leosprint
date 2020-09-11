@@ -1,7 +1,8 @@
 
 
 $(document).ready(function () {
-  $('#year-and-logo').append(`<p>© ${new Date().getFullYear()} Leosprint</p>`)
+  $('#year-and-logo').append(`<p>© ${new Date().getFullYear()} 
+  Всі права захищені</p>`)
 });
 
 var imgs = $('.lSSlideWrapper img');

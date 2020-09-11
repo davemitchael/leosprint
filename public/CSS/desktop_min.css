@@ -568,6 +568,10 @@ cursor: pointer;
   flex-direction: row;
   align-items:flex-start;
 }
+.zholud-logo__svg{
+  width: 80px;
+  fill: #1E1E1E;
+  }
 
 .block_6 p{
 

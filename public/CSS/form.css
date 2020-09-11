@@ -28,6 +28,8 @@ label.error {
 }
 
 .contact-us-form.inp .submit-container .rules-text {
+    font-family: PT Root !important;
+    font-size: var(--fontSize_P_form);
     display: inherit;
     width: 68%;
     text-align: end;
@@ -161,10 +163,10 @@ outline: none; }
     padding-left: 5%;
     height: 50px;
     border-bottom: 2px solid var(--color_form_P);
-    font-family: inherit;
+    font-family: var(--fontFamily_paragraph);
 }
 .cars-list option {
-    color: black;
+    color: var(--color_BG);
 }
 
 .lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
